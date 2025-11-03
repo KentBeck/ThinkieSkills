@@ -141,3 +141,23 @@ If useful, we can add a YAML schema stub and a sample Thinkie file next.
    ```
 
 3. Answer the prompts. The runner will render the suggested next step using the Thinkie’s `output_template`.
+
+## Add to Claude via MCP (Skills-like)
+
+Expose Thinkies to vanilla Claude as tools using the Model Context Protocol (MCP).
+
+1. Install deps (same venv is fine):
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. In Claude Desktop: Tools → Developer → Add Server
+   - Command: `python /Users/kentb/Dropbox/Mac/Documents/GitHub/ThinkieSkills/mcp_server.py`
+   - Name: `Thinkies`
+
+3. In a chat, enable the `Thinkies` tool. Available tools:
+   - `thinkies.list` → shows available Thinkies
+   - `thinkies.run` with params `{ "id": "fun_bit", "answers": { "task_summary": "...", "fun_candidates": "...", "energy_blockers": "..." } }`
+
+If `answers` are omitted or incomplete, the tool returns the required question ids so you can supply them in a follow-up tool call.
