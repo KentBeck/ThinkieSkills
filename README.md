@@ -118,3 +118,26 @@ Validate whether Kent Beck’s Thinkies provide real user value when delivered a
 ---
 
 If useful, we can add a YAML schema stub and a sample Thinkie file next.
+
+## Local usage
+
+1. Create a virtual environment (optional) and install dependencies:
+
+   ```bash
+   python3 -m venv .venv && source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+2. Run the Fun Bit Thinkie interactively:
+
+   ```bash
+   python runner.py --thinkie fun_bit
+   ```
+
+   Or specify a file directly:
+
+   ```bash
+   python runner.py --file thinkies/fun_bit.yaml
+   ```
+
+3. Answer the prompts. The runner will render the suggested next step using the Thinkie’s `output_template`.

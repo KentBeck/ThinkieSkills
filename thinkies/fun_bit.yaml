@@ -1,0 +1,53 @@
+# Thinkie: Fun Bit
+# Minimal authoring schema for a single Thinkie.
+# Fields are intentionally concise for an MVP.
+
+id: fun_bit
+name: Fun Bit
+intent: Help you find the part of the work that feels fun/energizing, to unlock momentum.
+triggers:
+  - stuck
+  - procrastinating
+  - dread
+  - low-energy
+preconditions:
+  - You have a concrete task or project in mind.
+voice:
+  style: succinct
+  tone: invitational
+
+questions:
+  - id: task_summary
+    prompt: In one sentence, what are you trying to do?
+  - id: fun_candidates
+    prompt: List 3 parts of this work that might be fun (gut feel, quick words).
+  - id: energy_blockers
+    prompt: What makes this feel heavy? Name 1–2 blockers.
+
+scaffold:
+  guidance: |
+    Keep it short. Offer options, not prescriptions. Invite a small next step that
+    increases energy slightly and is reversible.
+
+output_template: |
+  Here are possible “fun bits” to start with:
+  - {fun_candidates}
+
+  Observed heaviness: {energy_blockers}
+
+  Suggested next step (pick one):
+  1) Spend 10 minutes on the single most fun micro-task.
+  2) Remove one blocker with a low-effort experiment.
+  3) Reword the task so it sounds like something you’d enjoy.
+
+examples:
+  - user_goal: Refactor a module
+    fun_candidates: rename confusing names; delete dead code; write a crisp test
+    energy_blockers: fear of breaking behavior
+    example_output: |
+      Start with deleting one obviously dead function. Run tests. If that feels good,
+      pick a second dead spot. Stop after 10 minutes.
+
+pitfalls:
+  - Forcing a fun bit when none exists; acknowledge and choose the least-bad next step.
+  - Turning it into a long planning session; keep momentum small and reversible.
