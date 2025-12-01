@@ -1,0 +1,13 @@
+<p>[I’m so so excited. I thought for sure I was done with the catalog of tidyings. Then I ran across this one. Gives me hope that I’ll find even more tidyings out there. Send in your favorites! —kb]</p><p>Variables &amp; their initialization seem to drift apart sometimes. The name of a variable gives you a hint as to its role in the computation. However the initialization reinforces the message of the name. When you come across code that separates the two, declaration (with a possible type) &amp; initialization, &amp; the code is harder to read. By the time you get to the initilization, you've forgotten some of the context of what the variable is <em>_for_</em>.</p><p>Here's what this tidying looks like. </p><div class="paywall-jump" data-component-name="PaywallToDOM"></div><p>Imagine we have some code like this:</p><blockquote><pre><code>fn()
+   int a
+   ...some code that doesn't use _a_
+   a = ...
+   int b
+   ...some more code, maybe it uses _a_ but doesn't use _b_
+   b = ...a...
+   ...some code that uses _b_</code></pre></blockquote><p>Tidy this by moving the initialization up to the declaration:</p><pre><code>fn()
+   int a = ...
+   ...some code that doesn't use _a_
+   ...some more code, maybe it uses _a_ but doesn't use _b_
+   int b = ...a...
+   ...some code that uses _b_</code></pre><p>Play around with the order. Is it easier to read &amp; understand code if the variables are declared &amp; initialized just before they are used? Is it easier to read &amp; understand code if all the variables are declared &amp; initialized together at the top of the function? This is where you get to be a mystery writer, imagining the experience of a reader of your code &amp; leaving them the clues they need to guess who done it.</p><p>You can't just put variables &amp; code that sets them in any old order. You must respect the data dependencies between variables. If I use <em>_a_</em> to initialize <em>_b_</em>, I have to initialize <em>_a_</em> first. As you're executing this tidying, remember that you have to maintain the order of the data dependencies.</p><p>If you have to analyze data dependencies by hand, you are going to eventually make mistakes. You'll accidentally change the behavior of the code when you were just trying to improve its structure. No problem. Back up to a known correct version of the code. Work in smaller steps. That's the tidying way. Big design changes too hard &amp; scary? Take smaller steps. No, smaller. Still scary? No? Good.</p>

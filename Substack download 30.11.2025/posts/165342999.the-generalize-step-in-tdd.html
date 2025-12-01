@@ -1,0 +1,24 @@
+<p>At CraftConf this year I debuted a talk on Canon TDD. More on that later, but I just ran across a good example of a concept I introduced in that talk &amp; y’all know how precious good examples are.</p><p>One critique of TDD is that there’s no place in it for design. If you’re a practitioner you know that’s not true, but if that’s what it looks like from the outside, well, then that’s what it looks like from the outside.</p><p>For the talk I expanded the TDD loop:</p><ol><li><p>Write a failing test.</p></li><li><p>Make it pass.</p></li><li><p>Generalize.</p></li></ol><p>For decades we’ve been saying “red/green/refactor”. It strikes me that “refactor” covers more purposes than we’ve been able to communicate.</p><h2>Specific</h2><p>I’ll make a longer post later with all the details, but I want to get this example out there. Imagine we’re in a tidy first situation. We have a test passing. We want to write the next test, but we see how to make passing that test easier. So we generalize.</p><p>Say I have a linked list of nodes, each of which contains some values.</p><pre><code>class Node:
+    def __init__(self, entries):
+        self.entries = entries
+        self.next = None
+
+    def __iter__(self):
+        return NodeIterator(self)</code></pre><p>The NodeIterator goes through the entries in each Node in turn:</p><pre><code>class NodeIterator:
+    def __init__(self, start_node):
+        self.current_node = start_node
+        self.current_index = 0
+
+    def __next__(self):
+        while self.current_node is not None:
+            if self.current_index &lt; len(self.current_node.entries):
+                entry = self.current_node.entries[self.current_index]
+                self.current_entry_index += 1
+                return entry
+            else:
+                self.current_node = self.current_node.next
+                self.current_index = 0
+        raise StopIteration</code></pre><h2>General</h2><p>Suppose we want a new iterator that starts somewhere in the middle. In my recent experience (circa June 6, 2025) the genie would implement the new iterator from scratch, leaving us with two very similar chunks of code to maintain. The move that doesn’t seem to be in the genie’s repertoire is taking what we have and making it more general.</p><p>A more general solution is to make the starting index a constructor parameter with a default value of 0.</p><pre><code>class NodeIterator:
+    def __init__(self, start_node, start_index=0):
+        self.current_node = start_node
+        self.current_index = start_index</code></pre><p>All the same tests will pass, so it’s a refactoring. A few more tests will pass as well (we should still write some of them, for the sake of our own confidence &amp; that of generations to come).</p><h2>Generalize</h2><p>As I said, I don’t think we’ve done a good job of explaining all the various ways you can add value “on green”. I’ll almost inevitably dig into each of these in future posts:</p><ul><li><p>Generalize the design.</p></li><li><p>Generalize the implementation.</p></li><li><p>Simplify—reduce duplication &amp; eliminate indirection that isn’t carrying its weight.</p></li><li><p>Abstract. Separate the intention from the implementation.</p></li></ul>

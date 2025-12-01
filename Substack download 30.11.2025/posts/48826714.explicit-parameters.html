@@ -1,0 +1,9 @@
+<p>So you're reading some code you want to change &amp; you notice that some of the data it works on wasn't passed explicitly to the routine. How do you make the inputs clear?</p><p>Split the routine. The top part gathers the parameters and passes them explicitly to the second part.</p><div class="paywall-jump" data-component-name="PaywallToDOM"></div><p>It's common to see blocks of parameters passed in a map. This makes it hard to read &amp; understand what data is required. It also opens up the horrific abuse of modifying the parameters for (implicit) use later.</p><p>For example, if you see this:</p><pre><code>params = { a: 1, b: 2 }
+foo(params)
+
+function foo(params)
+   ...params.a... ...params.b...</code></pre><p>Make the parameters explicit by splitting foo:</p><pre><code>function foo(params)
+   foo_body(params.a, params.b)
+
+function foo_body(a, b)
+   ...a... ...b...</code></pre><p>Another case for Explicit Parameters is when you find environment variables deep in the bowels of the code. Make the parameters explicit, then be prepared to push them up the chain of calling functions. This will make your code easier to read, test, &amp; analyze.</p>

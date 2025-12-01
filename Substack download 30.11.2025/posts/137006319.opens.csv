@@ -1,0 +1,23 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+137006319,2023-09-13T14:09:31.535Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-13T14:09:52.094Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-13T14:12:47.949Z,bjoern@jensen.coach,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-13T14:15:42.613Z,bjoern@jensen.coach,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-13T14:19:46.095Z,bjoern@jensen.coach,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-13T14:25:47.069Z,bob@understandinggroup.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-13T14:29:29.783Z,terry@odd-e.com,newsletter,founding,false,SG,,,,,,Mozilla/5.0
+137006319,2023-09-13T15:35:17.219Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-13T15:46:30.391Z,ed-s@modeldriven.com,newsletter,founding,false,US,,,,,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+137006319,2023-09-13T15:55:34.898Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0
+137006319,2023-09-13T16:46:15.070Z,ed-s@modeldriven.com,newsletter,founding,false,US,,,,,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+137006319,2023-09-13T17:21:13.587Z,bjoern@jensen.coach,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-13T18:07:32.335Z,dion.stewart@dojoandco.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-13T22:02:31.205Z,ed-s@modeldriven.com,newsletter,founding,false,US,,,,,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+137006319,2023-09-13T22:18:28.963Z,ed-s@modeldriven.com,newsletter,founding,false,US,,,,,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+137006319,2023-09-13T22:35:04.551Z,terry@odd-e.com,newsletter,founding,false,SG,,,,,,Mozilla/5.0
+137006319,2023-09-14T01:28:24.253Z,terry@odd-e.com,newsletter,founding,false,SG,,,,,,Mozilla/5.0
+137006319,2023-09-14T04:24:48.926Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0
+137006319,2023-09-14T13:07:49.957Z,m.cannon.dev@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-19T14:55:29.398Z,niquola@health-samurai.io,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-09-20T17:43:57.487Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+137006319,2023-10-13T12:04:13.942Z,ed-s@modeldriven.com,newsletter,founding,false,ES,,,,,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)"

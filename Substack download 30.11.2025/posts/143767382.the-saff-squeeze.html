@@ -1,0 +1,75 @@
+<blockquote><p>Originally published late 2008, then again on Medium in 2022. More creative uses of function inlining.</p></blockquote><p><em>Summary: Isolate a defect by starting with a system-level test. Progressively inline and prune until you have the smallest possible test that demonstrates the defect.</em></p><h1><strong>Introduction</strong></h1><p>In American football there is a play called “The Sandwich” in which two people hit the person carrying the ball simultaneously, one up near his shoulders and the other near his waist. Sandwiching is definitely not done out of concern for the ball carrier’s health.</p><p>A recent bug in JUnit put me in mind of The Sandwich. We had just gotten JUnitMax (about which more later) to the dog food stage, but it ran some tests repeatedly. What was going on?</p><h1><strong>High…</strong></h1><p>The system-level test was straightforward to write:</p><pre><code>private MaxCore fMax;
+@Before public void createMax() {
+    fMax= MaxCore.createFresh();
+}
+public static class TwoOldTests extends TestCase {
+    public void testOne() {}
+    public void testTwo() {}
+}
+
+@Test public void junit3TestsAreRunOnce() throws Exception {
+    Result result= fMax.run(
+        Request.aClass(TwoOldTests.class),
+        new JUnitCore()
+    );
+    assertEquals(2, result.getRunCount());       
+}</code></pre><p>Running this test showed that four tests were being run, not two. (The first version of the test ran JUnit 4-style tests and it passed, leading to a minute or two of head scratching.) The test above hits the defect high, from the point of view of a user. Here’s where the Saff Squeeze came in.</p><h1><strong>And Low…</strong></h1><p>Just because I have a failing test, though, doesn’t mean I know how to fix the defect. If I can write the narrowest possible test that still fails, I will have isolated the code that needs to change [ed: see also the <a href="https://kentbeck.github.io/TestDesiderata/">Test Desiderata</a>, in particular the property that tests are more valuable when they are Specific]. Finding the problematic logic will help me prepare to fix it. Finally, the resulting test will help ensure that the defect is fixed and stays fixed.</p><p>The usual way I would isolate a problem like this is by single stepping in a debugger. By watching data values as I step through the code I have a chance to quickly catch one that looks wrong. In fact, my first approach to this defect was to single step. It took me quite a while to find the offending method, so I decided to try a new technique, introduced to me by David Saff, to isolate the problem method again.</p><p>The Saff Squeeze works by taking a failing test and progressively inlining parts of it until you can’t inline further without losing sight of the defect. Here’s the cycle:</p><ol><li><p>Inline a non-working method in the test.</p></li><li><p>Place a (failing) assertion earlier in the test than the existing assertions.</p></li><li><p>Prune away parts of the test that are no longer relevant.</p></li><li><p>Repeat.</p></li></ol><p>Here’s how the Squeeze worked in this case. First I duplicated the system-level test. (I want the original left around to communicate the user’s experience of the defect.) Next I inlined the call to <code>fMax.run()</code>.</p><pre><code><a href="http://twitter.com/Test">@Test</a> public void saffSqueezeExample() throws Exception {
+    Request request = Request.aClass(TwoOldTests.class);
+    JUnitCore core = new JUnitCore();
+    // fMax.run(request, core); -- inlined
+    core.addListener(fMax.new RememberingListener());
+    Result result;
+    try { 
+        result = core.run(fMax.sortRequest(request).getRunner());
+// We can assert right here
+    } finally { 
+        try { 
+            fMax.save(); 
+        } catch (FileNotFoundException e) { 
+            e.printStackTrace(); 
+        } catch (IOException e) { 
+            e.printStackTrace(); 
+        } 
+    } 
+    assertEquals(2, result.getRunCount()); 
+}</code></pre><p>This made a big mess, but only temporarily. What I noticed is that I could move the assertion immediately after the call to <code>core.run()</code>. Once I do that, all the code to save <code>fMax </code>is irrelevant, as is the listener. After pruning, here is the test that was left:</p><pre><code>@Test public void saffSqueezeExample() throws Exception {
+    Request request= Request.aClass(TwoOldTests.class);
+    JUnitCore core= new JUnitCore();
+    Result result= core.run(fMax.sortRequest(request).getRunner());
+    assertEquals(2, result.getRunCount());       
+}</code></pre><p>Now the test is one step closer to isolating the problematic logic. Next I inlined the call to <code>core.run().</code> And moved the assertion. And pruned. And inlined... Eventually (after ~10 cycles) I had isolated the method that was causing the problem:</p><pre><code>@Test public void saffSqueezeExample() throws Exception {
+    final Description method= Description.createTestDescription(TwoOldTests.class, "testOne");
+    Filter filter= Filter.matchDescription(method);
+    JUnit38ClassRunner child= new JUnit38ClassRunner(TwoOldTests.class);
+    child.filter(filter);
+    assertEquals(1, child.testCount());
+}</code></pre><p>JUnit38ClassRunner can't filter its tests if they are plain JUnit 3.8 tests. That's the problem. Now, if this was a fairy tale I'd be able to tell you the simple fix that made everything work. Instead, I'm still struggling with how in the world to fix that method. The Saff Squeeze worked well enough, though, that I wanted to get it written up right away.</p><h1><strong>Conclusion</strong></h1><p>Isolating the defect with the debugger took me about twenty minutes (the code is twistier than I thought and I was having a Bad Brain Day). The Saff Squeeze took me about an hour, but much of that time was spent manually inlining code that Eclipse should have been able to handle automatically but couldn’t (example in the appendix). One key difference between the two processes was that after debugging I knew where the defect was, but after squeezing I had a minimal unit test for the defect as well. That concise test is a handy by-product of the process.</p><p>I learned a few things during this exercise (the first time I’ve used the technique without pairing with Saff). Here are some points I learned to pay attention to:</p><ul><li><p>Make sure you can get back to the state of your code before squeezing. You will likely need to make private methods public just to support squeezing. By the time you’re done, though, you should be back to using public methods.</p></li><li><p>When moving the assertion you may have to modify it as well. At one point I went from testing that the whole tree had two elements to testing that one subtree had one element.</p></li><li><p>Run the tests right after moving the assertion. If the squeezed test passes, you missed. Back up, make sure the test now fails, and figure out what assertion you really need.</p></li><li><p>Squeezing encourages good design. If inlining creates too big a mess, back up, clean up the called method, and inline again. Even if I received no other benefits from squeezing, the design improvement would be worth it.</p></li></ul><p>The Saff Squeeze seems particularly suited to regression testing. At least I can’t yet see how to fit it into a development cycle for new code. It would work as the heart of a disciplined approach to identifying and fixing defects:</p><ol><li><p>Reproduce the defect with a system-level test.</p></li><li><p>Squeeze.</p></li><li><p>Make both tests work.</p></li><li><p>Analyze and eliminate the root cause of the defect.</p></li></ol><p>For now, though, I’m stuck on 3). At least I was able to hit ’em high and hit ’em low.</p><h1><strong>Appendix: Method Eclipse Should Be Able To Inline</strong></h1><p>In case you’re curious, Eclipse 3.5M2 can’t inline a method like this:</p><pre><code>public void caller() {
+   boolean thrown= foo.callee();
+   ...
+}Foo
+private boolean callee() {
+   try {
+      return true;
+   } catch (Exception e) {
+      return false;
+   }
+}</code></pre><p>You can inline this safely by hand by replacing the return statements with assignments:</p><pre><code>public void caller() {
+   boolean thrown;
+   try {
+       thrown= true;
+   } catch (Exception e) {
+       thrown= false;
+   }
+   ...
+}</code></pre><p>Having automated inlining that worked sped the squeezing process considerably. David Saff points out that you can at least automatically move the code into your test class by extracting the method call into its own private method in the test class and inlining that. For the example above, you would first extract the call to <code>callee()</code>:</p><pre><code>public void caller() {
+   boolean thrown= callee2();
+   ...
+}private boolean callee2() {
+   foo.callee();
+}</code></pre><p>The reference to foo.callee() can now be inlined automatically:</p><pre><code>private boolean callee2() {
+    try {
+        return true;
+    } catch (Exception e) {
+        return false;
+    }
+}</code></pre><p>Now, because you are dealing with particular data values, you can likely eliminate one side or the other of the try/catch block. This lets you automatically inline <code>callee2()</code> and continue squeezing.</p>

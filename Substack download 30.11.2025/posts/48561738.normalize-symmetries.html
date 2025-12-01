@@ -1,0 +1,25 @@
+<p>Code grows organically. Some folks use "organic" as a pejorative. That makes no sense to me. We can't possibly write all the code we'll ever need all at once. That would only work if we never learned anything.</p><p>In growing organically, the same problem may be solved differently at different time or by different people. </p><div class="paywall-jump" data-component-name="PaywallToDOM"></div><p>That's okay, but it makes for difficult reading. As a reader you'd like consistency. If you see a pattern you can confidently jump to the conclusion that you know what's going on.</p><p>Take the example of lazily initialized variables. You might see them written different ways.</p><pre><code>foo()
+  return foo if foo not nil
+  foo := ...
+  return foo
+
+foo()
+  if foo is nil
+    foo := ...
+  return foo
+
+# tricky 
+foo()
+  return foo not nil
+    ? foo
+    : foo := ...
+
+# doubly tricky, assuming assignment is an expression 
+foo()
+  return foo := foo not nil 
+    ? foo
+    : ...
+
+# even trickier, hiding the conditional 
+foo()
+  return foo := foo || ...</code></pre><p>(See if you can find or invent more variants.)</p><p>All of these are ways of saying, "Compute &amp; cache a value for foo if we haven't already." Each has its pros and cons. You as a reader will quickly get acclimated to any one of them. </p><p>Things get confusing when 2 or more of the patterns are used interchangeably. As a reader you expect that difference means difference. Here you have difference that obscures the fact that the same thing is going on.</p><p>Pick a way. Convert one of the variants into the way. This is what I mean by “normalize”. </p><p>Tidy one form of unnecessary variation at a time--lazy initialization, for example, first.</p><p>Sometimes the commonality is hidden by extra detail. Look for routines that are similar but not identical. Separate the different parts from the identical parts. [this may be a different point from the one addressed in the rest of this tidying. example?]</p>

@@ -1,0 +1,9 @@
+<p>Imagine you have some code.</p><pre><code>...some code...</code></pre><p>Later you discover you only want to run it sometimes.</p><pre><code>if (condition)
+    ...some code...</code></pre><p>Even later you discover a reason not to run the code.</p><pre><code>if (condition)
+   if (not other condition)
+      ...some code...</code></pre><p>As a reader, it's easy to get lost in the nested conditions. Tidy the above to:</p><div class="paywall-jump" data-component-name="PaywallToDOM"></div><pre><code>if (not condition) return
+if (other condition) return
+...some code...</code></pre><p>This is easier to read. "Before we get into the details of the code there are some preconditions we need to bear in mind."</p><p>(But what about MuLTipLe ReTuRns? The "rule" about having a single return for a routine came from the days of FORTRAN, where a single routine could have multiple entry <em>_and_</em> exit points. It was nearly impossible to debug such code. You couldn't tell what statements were executed. Code with guard clauses is easier to analyze because the pre-conditions are explicit.)</p><p>Don't over-do guard clauses. A routine with 7-8 guard clauses (I've seen it in the wild) is <em>_not_</em> easier to read. It needs more acute care to partition complexity.</p><p>Only tidy to a guard clause if the prompt is met precisely.</p><pre><code>if (condition)
+   ...all the rest of the code in the routine...</code></pre><p>I see code I want to tidy but can't.</p><pre><code>if (condition)
+    ...some code...
+...some other code...</code></pre><p>Maybe the first 2 lines can be extracted to a Helper Method and <em>_then_</em> a guard clause tidied, but <em>_always_</em> and <em>_only_</em> take tiny steps.</p>

@@ -1,0 +1,10 @@
+<p>When you see a comment that says exactly what the code says, remove it.</p><p>The purpose of code is to explain to other programmers what you want the computer to do [ref?]. </p><div class="paywall-jump" data-component-name="PaywallToDOM"></div><p>Comments &amp; code present different tradeoffs for you as a writer and for future readers. You can explain anything you want in prose. On the other hand that prose has no mechanism to double-check its accuracy as the system changes.<br>Some folks take a narrow view of the mandate to communicate, insisting on dogmatic rules like one stating that every routine must be commented. This results in comments like:</p><pre><code>getX()
+  # return X
+  return X</code></pre><p><br>This comment is costs without benefits. As a writer you've just wasted the reader's time, time we can't recover. If a comment is completely redundant, then, delete it.</p><p>Tidyings often chain together. A previous tidying may have made a comment redundant. For example, the original code might look like this:</p><pre><code>if (generator)
+  ...a bunch of lines of code to set up the generator...
+else
+  # no generator, return the default
+  return getDefaultGenerator()</code></pre><p>The comment isn't redundant at first. It returns our attention to the current context (no generator present) after reading a bunch of lines of code in a different context (generator present, needs setup). </p><p>After tidying with a Guard Clause, the code looks like this:</p><pre><code>if (! generator)
+  # no generator, return the default
+  return getDefaultGenerator
+...a bunch of lines of code to set up the generator...</code></pre><p>After tidying, the comment is a simple restatement of what the code says. Hasta la vista, auf wiedersehen, buh bye.</p><p>(We'll talk more about chaining tidyings in the following sections.)</p>

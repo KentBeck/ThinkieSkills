@@ -1,0 +1,4 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+31894974,2021-01-26T15:17:00.850Z,markus.kinzler@gmail.com,newsletter,everyone,true,US,Somerville,MA,desktop,Linux,browser,Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+31894974,2021-01-26T15:17:51.140Z,siddharthsarda01@gmail.com,newsletter,everyone,true,US,Seattle,WA,desktop,OS X,browser,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36"
+31894974,2021-01-26T18:51:18.720Z,juayhi@gmail.com,newsletter,everyone,true,US,Somerville,MA,tablet,Android,mobile browser,Mozilla/5.0 (Android 10; Mobile; rv:84.0) Gecko/84.0 Firefox/84.0

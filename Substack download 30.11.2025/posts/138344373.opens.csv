@@ -1,0 +1,18 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+138344373,2023-10-27T18:35:50.062Z,terry@odd-e.com,newsletter,founding,false,SG,,,,,,Mozilla/5.0
+138344373,2023-10-27T18:35:55.925Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+138344373,2023-10-27T18:45:21.449Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0
+138344373,2023-10-27T18:51:26.380Z,ed-s@modeldriven.com,newsletter,founding,false,PT,,,,,,Mozilla/5.0
+138344373,2023-10-27T18:53:04.131Z,wil.pannell@adaptive-complex-systems.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+138344373,2023-10-27T19:05:15.627Z,bjoern@jensen.coach,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+138344373,2023-10-27T21:53:54.705Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+138344373,2023-10-27T22:51:57.128Z,terry@odd-e.com,newsletter,founding,false,SG,,,,,,Mozilla/5.0
+138344373,2023-10-28T01:58:07.981Z,terry@odd-e.com,newsletter,founding,false,SG,,,,,,Mozilla/5.0
+138344373,2023-10-28T13:04:48.794Z,dion.stewart@dojoandco.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+138344373,2023-10-28T15:00:00.905Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+138344373,2023-10-28T15:19:54.428Z,ed-s@modeldriven.com,newsletter,founding,false,US,,,,,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+138344373,2023-10-28T17:01:47.732Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+138344373,2023-10-28T19:26:20.086Z,bob@understandinggroup.com,newsletter,founding,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+138344373,2023-10-28T22:09:34.224Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0
+138344373,2023-11-06T07:16:25.250Z,kuraginmail@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0
+138344373,2023-11-13T05:48:45.597Z,dancook07@gmail.com,newsletter,founding,false,US,,,,,,Mozilla/5.0

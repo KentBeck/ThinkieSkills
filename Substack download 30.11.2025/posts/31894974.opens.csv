@@ -1,0 +1,70 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+31894974,2021-01-26T15:11:01.360Z,kentlbeck@gmail.com,,,false,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:11:01.380Z,kentlbeck@gmail.com,newsletter,everyone,false,CA,Vancouver,BC,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:12:55.628Z,kkumar9844@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:12:55.660Z,kkumar9844@gmail.com,newsletter,everyone,true,US,Irving,TX,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:16:46.660Z,markus.kinzler@gmail.com,,,true,,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:16:46.660Z,markus.kinzler@gmail.com,newsletter,everyone,true,US,Seattle,WA,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:16:58.315Z,markus.kinzler@gmail.com,,,true,,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:16:58.500Z,markus.kinzler@gmail.com,newsletter,everyone,true,US,Seattle,WA,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:17:38.157Z,siddharthsarda01@gmail.com,,,true,,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:17:38.340Z,siddharthsarda01@gmail.com,newsletter,everyone,true,US,Seattle,WA,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:17:41.079Z,siddharthsarda01@gmail.com,,,true,,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:21:37.160Z,waitingforqodot@gmail.com,newsletter,everyone,true,CA,Vancouver,BC,mobile,iOS,mobile browser,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T15:27:55.820Z,mayurjain01@gmail.com,newsletter,everyone,true,CA,Vancouver,BC,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:27:55.853Z,mayurjain01@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:41:16.630Z,tim.matteson@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:41:16.640Z,tim.matteson@gmail.com,newsletter,everyone,true,US,Seattle,WA,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:41:19.548Z,tim.matteson@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T15:54:27.970Z,kbaldanza@gmail.com,newsletter,everyone,true,US,Unknown,CA,desktop,OS X,email client,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+31894974,2021-01-26T15:54:28.550Z,kbaldanza@gmail.com,,,true,US,,,,,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko)"
+31894974,2021-01-26T16:00:11.981Z,juayhi@gmail.com,,,true,,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T16:00:12.020Z,juayhi@gmail.com,newsletter,everyone,true,US,Seattle,WA,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T16:05:32.093Z,kkumar9844@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T16:05:32.130Z,kkumar9844@gmail.com,newsletter,everyone,true,US,Irving,TX,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T16:07:51.080Z,chip@chipcastle.com,newsletter,everyone,true,US,Philadelphia,PA,mobile,iOS,mobile browser,"Mozilla/5.0 (iPhone; CPU iPhone OS 12_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:07:51.662Z,chip@chipcastle.com,,,true,US,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 12_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:12:38.420Z,neil.chalk@gmail.com,newsletter,everyone,true,US,Seattle,WA,mobile,iOS,mobile browser,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:12:38.460Z,neil.chalk@gmail.com,newsletter,everyone,true,US,Seattle,WA,mobile,iOS,mobile browser,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:12:39.028Z,neil.chalk@gmail.com,,,true,,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:12:39.354Z,neil.chalk@gmail.com,,,true,,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:13:27.050Z,neil.chalk@gmail.com,newsletter,everyone,true,US,Seattle,WA,mobile,iOS,mobile browser,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:13:27.247Z,neil.chalk@gmail.com,,,true,,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:13:27.410Z,neil.chalk@gmail.com,newsletter,everyone,true,US,Seattle,WA,mobile,iOS,mobile browser,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:13:27.530Z,neil.chalk@gmail.com,,,true,,,,,,,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:15:27.070Z,neil.chalk@gmail.com,newsletter,everyone,true,US,Seattle,WA,mobile,iOS,mobile browser,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:15:27.220Z,neil.chalk@gmail.com,newsletter,everyone,true,US,Seattle,WA,mobile,iOS,mobile browser,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+31894974,2021-01-26T16:57:34.030Z,tony.daly@me.com,newsletter,everyone,true,US,Seattle,WA,unknown,unknown,unknown,Superhuman
+31894974,2021-01-26T17:01:13.650Z,tony.daly@me.com,newsletter,everyone,true,US,Seattle,WA,unknown,unknown,unknown,Superhuman
+31894974,2021-01-26T17:01:28.525Z,riochuong@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:01:29.750Z,riochuong@gmail.com,newsletter,everyone,true,US,Irving,TX,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:35:16.967Z,rodrigosetti@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:35:17.110Z,rodrigosetti@gmail.com,newsletter,everyone,true,CA,Vancouver,BC,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:35:19.970Z,rodrigosetti@gmail.com,newsletter,everyone,true,CA,Vancouver,BC,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:35:20.004Z,rodrigosetti@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:35:39.347Z,rodrigosetti@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:35:39.350Z,rodrigosetti@gmail.com,newsletter,everyone,true,CA,Vancouver,BC,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:59:48.880Z,ssumit@alumni.upenn.edu,newsletter,everyone,true,US,Seattle,WA,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:59:49.866Z,ssumit@alumni.upenn.edu,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:59:51.702Z,ssumit@alumni.upenn.edu,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T17:59:54.894Z,ssumit@alumni.upenn.edu,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T18:34:06.323Z,kanchanepally@gmail.com,,,true,,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T18:34:06.470Z,kanchanepally@gmail.com,newsletter,everyone,true,US,Seattle,WA,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T18:34:09.352Z,kanchanepally@gmail.com,,,true,,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T18:50:55.410Z,juayhi@gmail.com,newsletter,everyone,true,US,Seattle,WA,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T18:50:55.471Z,juayhi@gmail.com,,,true,,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T19:35:23.920Z,s.r.schwartz@ieee.org,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T19:35:23.940Z,s.r.schwartz@ieee.org,newsletter,everyone,true,US,Seattle,WA,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T19:35:26.867Z,s.r.schwartz@ieee.org,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-26T19:36:11.855Z,s.r.schwartz@ieee.org,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-27T05:00:31.050Z,sg1096@gmail.com,newsletter,everyone,true,CA,Vancouver,BC,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-27T05:00:31.056Z,sg1096@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-27T05:00:33.997Z,sg1096@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-27T05:37:55.406Z,sg1096@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-27T05:37:55.510Z,sg1096@gmail.com,newsletter,everyone,true,CA,Vancouver,BC,desktop,Windows,browser,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-27T07:32:30.960Z,aa@opopov.com,newsletter,everyone,true,US,Unknown,TN,desktop,OS X,browser,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15"
+31894974,2021-01-27T07:32:31.796Z,aa@opopov.com,,,true,UA,,,,,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15"
+31894974,2021-01-27T17:26:28.350Z,tony.daly@me.com,newsletter,everyone,true,US,Seattle,WA,unknown,unknown,unknown,Superhuman
+31894974,2021-01-28T01:33:50.352Z,sg1096@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+31894974,2021-01-30T16:02:31.530Z,tony.daly@me.com,,,true,US,,,,,,Superhuman
+31894974,2021-02-07T12:35:17.213Z,mehul.kar@gmail.com,,,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
