@@ -1,0 +1,43 @@
+id: easy_bit
+name: Easy Bit
+intent: Pick the absolutely easiest thing to do that will help & do it.
+triggers:
+- You’re paralyzed by the magnitude of the problem f...
+preconditions:
+- You’re paralyzed by the magnitude of the problem facing you.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: how can I ever get all this done?
+- id: q_1
+  prompt: Sure. I’m working on that. But I’m here, today, & I have goals.?
+scaffold:
+  guidance: 'The user is facing this pattern: You’re paralyzed by the magnitude of the problem facing you..
+
+    Your goal is to help them apply this transformation: Pick the absolutely easiest thing to do that will help & do it..
+
+
+    Context:
+
+    Thinkie Easy Bit follows from Thinkie Hard Problem, at least it does for me.
+
+    I’ve come to believe that confidence & energy are more important than ideas. With confidence & energy I can (with the help of Thinkies 😉) come up with plenty of ideas. Without confidence & energy I can’t execute no matter how many or how good my ideas.
+
+    Thinkie Hard Problem unblocks energy by acknowledging the whole problem, knowing that you’re not sweeping anything under the carpet. But hard problems can also be overwhe...'
+output_template: 'Pattern: You’re paralyzed by the magnitude of the problem facing you.
+
+  Transformation: Pick the absolutely easiest thing to do that will help & do it.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

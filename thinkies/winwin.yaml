@@ -1,0 +1,47 @@
+id: winwin
+name: Winwin
+intent: What are solutions that would be good for everyone?
+triggers:
+- You’re stuck on a decision because someone is goin...
+preconditions:
+- You’re stuck on a decision because someone is going to be negatively affected.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Bad for subscribers. Attract a bunch of new subscribers?
+- id: q_1
+  prompt: Don’t know how to do that.?
+scaffold:
+  guidance: 'The user is facing this pattern: You’re stuck on a decision because someone is going to be negatively affected..
+
+    Your goal is to help them apply this transformation: What are solutions that would be good for everyone?.
+
+
+    Context:
+
+    I know it’s a cliche, but it’s a cliche because it works. And it’s a Thinkie because under stress it’s easy to forget.
+
+    A recent example is me taking on sponsors. After going pro at content earlier this year I needed ways to increase my revenue to make up for my lost paycheck. Raise prices again? Bad for subscribers. Attract a bunch of new subscribers? Don’t know how to do that.
+
+    Sponsorships!
+
+    Better for the sponsors (👋🏻 sponsors!) because they get their products exposed to more people.
+
+    Better for...'
+output_template: 'Pattern: You’re stuck on a decision because someone is going to be negatively affected.
+
+  Transformation: What are solutions that would be good for everyone?
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

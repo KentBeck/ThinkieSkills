@@ -1,0 +1,43 @@
+id: change_tradeoff_curves
+name: Change Tradeoff Curves
+intent: Rather than trying to change the outcome directly, change the shape of the tradeoff curves.
+triggers:
+- You’re stalled trying to make progress changing th...
+preconditions:
+- You’re stalled trying to make progress changing the outcome of a tradeoff.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: We aren’t helpless victims, we are participants in a system. What if we invest in lowering the overhead of deployment?
+scaffold:
+  guidance: 'The user is facing this pattern: You’re stalled trying to make progress changing the outcome of a tradeoff..
+
+    Your goal is to help them apply this transformation: Rather than trying to change the outcome directly, change the shape of the tradeoff curves..
+
+
+    Context:
+
+    Continuous deployment is an example. We’d like to deploy more frequently for lots of good reasons. However, the cost per deployment is killing us.
+
+    I’ve seen folks just decree daily/weekly/monthly deployments in situations like this. Chaos ensues. Errors go up. Overhead goes up. Work done goes down. Nobody is happy.
+
+    Instead, think about deployment frequency as a tradeoff:
+
+    On one side we have the cost of deploying more slowly—cost of delaying feedback, cost of delaying revenue, cost of errors from...'
+output_template: 'Pattern: You’re stalled trying to make progress changing the outcome of a tradeoff.
+
+  Transformation: Rather than trying to change the outcome directly, change the shape of the tradeoff curves.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

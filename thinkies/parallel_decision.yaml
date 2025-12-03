@@ -1,0 +1,41 @@
+id: parallel_decision
+name: Parallel Decision
+intent: Why not both?
+triggers:
+- You have to decide between 2 alternatives, the dec...
+preconditions:
+- You have to decide between 2 alternatives, the decision is unclear, & the stakes are high.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Support both for a while.?
+scaffold:
+  guidance: 'The user is facing this pattern: You have to decide between 2 alternatives, the decision is unclear, & the stakes are high..
+
+    Your goal is to help them apply this transformation: Why not both?.
+
+
+    Context:
+
+    The final decision-related Thinkie, joining Force Decision & Defer Decision.
+
+    I first learned this Thinkie when talking to Ward Cunningham. The web was just getting started & the team he was working with wasn’t sure whether to have a web interface or a rich client interface (back when these were not the same). He suggested the team implement both interfaces at the same time until the choice became clear. After a month, the web interface was clearly superior & away they went.
+
+    Set-based design is a...'
+output_template: 'Pattern: You have to decide between 2 alternatives, the decision is unclear, & the stakes are high.
+
+  Transformation: Why not both?
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

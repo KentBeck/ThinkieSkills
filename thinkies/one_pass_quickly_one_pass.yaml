@@ -1,0 +1,41 @@
+id: one_pass_quickly_one_pass
+name: One Pass Quickly One Pass
+intent: Radically scale back your ambitions for the pieces & deliver all of them in a first pass, then go through all the pieces & improve them.
+triggers:
+- You have a project that requires many fairly indep...
+preconditions:
+- You have a project that requires many fairly independent pieces.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You have a project that requires many fairly independent pieces..
+
+    Your goal is to help them apply this transformation: Radically scale back your ambitions for the pieces & deliver all of them in a first pass, then go through all the pieces & improve them..
+
+
+    Context:
+
+    You have a software project. The regulators say you have to deliver a project with variations for all 50 states (American-centric, I know) by a certain date or 💀. You have 5 months. How do you structure the project?
+
+    Deliver all states with a calculated amount of buffer, say get done in 4 months so you have a month of slack.
+
+    10 states a month. Implement the most important ones first, or the riskiest ones first, or the ones that will teach you the most. If you get to the end of month 2 & you’re no...'
+output_template: 'Pattern: You have a project that requires many fairly independent pieces.
+
+  Transformation: Radically scale back your ambitions for the pieces & deliver all of them in a first pass, then go through all the pieces & improve them.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

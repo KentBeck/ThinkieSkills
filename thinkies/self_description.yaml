@@ -1,0 +1,41 @@
+id: self_description
+name: Self Description
+intent: use the system to model itself.
+triggers:
+- you have a system that models other systems....
+preconditions:
+- you have a system that models other systems.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: 'Meta-circularity is as old as programming [ed: probably older?'
+- id: q_1
+  prompt: '] It provides leverage 3 ways:?'
+scaffold:
+  guidance: 'The user is facing this pattern: you have a system that models other systems..
+
+    Your goal is to help them apply this transformation: use the system to model itself..
+
+
+    Context:
+
+    I apologize for this coming out late. I had mis-scheduled an earlier Thinkie & thought I already had this week covered.
+
+    We are moving now into Thinkies that I call “models”. “Analogy” might be a better word. “If this were an X, then the logical consequences are Y & Z.” There is power in stepping away from the situation as it appears literally & thinking of it as something else. I get emotionally attached to my problems—I have a big problem I’m scared oh dear oh dear. Applying a model temporarily...'
+output_template: 'Pattern: you have a system that models other systems.
+
+  Transformation: use the system to model itself.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

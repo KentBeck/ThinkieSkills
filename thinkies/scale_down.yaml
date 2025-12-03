@@ -1,0 +1,39 @@
+id: scale_down
+name: Scale Down
+intent: What thing would, if you had it, make the big problem more tractable? Make that.
+triggers:
+- You are stuck & overwhelmed trying to solve a big ...
+preconditions:
+- You are stuck & overwhelmed trying to solve a big problem.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You are stuck & overwhelmed trying to solve a big problem..
+
+    Your goal is to help them apply this transformation: What thing would, if you had it, make the big problem more tractable? Make that..
+
+
+    Context:
+
+    In a way Scale Down seems like it’s too simple to need naming & explaining. However, when I’m in that moment of overwhelm, that’s exactly when I need the reminder that it’s okay to solve a part of the problem.
+
+    And it’s not just any old part of the problem that called forth by Scale Down, it’s specifically a part of the problem that will make the overall problem easier to solve. “Well, I’ve written one line of code so that’s one less line of code I’ll need to write.” Nope. There aren’t 1000 lines...'
+output_template: 'Pattern: You are stuck & overwhelmed trying to solve a big problem.
+
+  Transformation: What thing would, if you had it, make the big problem more tractable? Make that.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

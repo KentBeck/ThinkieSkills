@@ -1,0 +1,29 @@
+id: measure_what_matters
+name: Measure What Matters
+intent: measure the value you actually want to change, even if that measure is vague or not actionable or complicated.
+triggers:
+- you are measuring the steps of a multi-stage process but you aren’t seeing the large-scale improvement you want.
+preconditions:
+- You are interested in Measure What Matters.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: What matters?
+- id: q_1
+  prompt: Am I reliably making enough so I don’t have rely on bursty (& recently diminished) consulting/speaking income?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: measure the value you actually want to change, even if that measure is vague or not actionable or complicated..
+
+
+    Context:
+
+    If you care about profit, measure profit. If you care about customer satisfaction, measure customer satisfaction. If you care about employee retention, measure employee retention.
+
+    Measurement appeals to our need for certainty & predictability. However, most measures the provide a sense of certainty & predictability are illusions. We all operate in complex contexts. Cause & effect have no obvious connection & are anyway subject to variance, reinforcing & inhibiting feedback loops, & measurement e...'
+output_template: "Pattern: \nTransformation: measure the value you actually want to change, even if that measure is vague or not actionable or complicated.\n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

@@ -1,0 +1,41 @@
+id: latency_or_throughput
+name: Latency Or Throughput
+intent: ask “latency or throughput”. They’ll say “both”. Keep asking until you get an answer or you learn that the organization refuses to distinguish.
+triggers:
+- someone says, “We need to go faster!!!” (yes, 3 ex...
+preconditions:
+- someone says, “We need to go faster!!!” (yes, 3 exclamation points!)
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: someone says, “We need to go faster!!!” (yes, 3 exclamation points!).
+
+    Your goal is to help them apply this transformation: ask “latency or throughput”. They’ll say “both”. Keep asking until you get an answer or you learn that the organization refuses to distinguish..
+
+
+    Context:
+
+    Latency is the distribution of times from when work enters the system until work leaves the system. “For the features that ship, on average [ed: careful, see also Long-Tail Distributions] they take 4 months from specification to evaluation in production.”
+
+    Thoughput is the total of work items leaving the system every clock tick. “We seem to finish 14 features per month.” (Yes, features aren’t all the same size, or at least not yet.)
+
+    Depending on which you want to improve, you would rearrange the ...'
+output_template: 'Pattern: someone says, “We need to go faster!!!” (yes, 3 exclamation points!)
+
+  Transformation: ask “latency or throughput”. They’ll say “both”. Keep asking until you get an answer or you learn that the organization refuses to distinguish.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

@@ -1,0 +1,41 @@
+id: agreements
+name: Agreements
+intent: Pause & make a list of everything you agree on.
+triggers:
+- You are locked in an argument & you want progress....
+preconditions:
+- You are locked in an argument & you want progress.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You are locked in an argument & you want progress..
+
+    Your goal is to help them apply this transformation: Pause & make a list of everything you agree on..
+
+
+    Context:
+
+    Thanks to
+
+    for pointing out this Thinkie. This stretches the scope of Thinkies a bit. It’s almost like self-help or inter-personal advice. However, I store these techniques in the same box as the rest of my Thinkies, so I think it belongs. Thoughts?
+
+    “Heated Agreement” is an apparent argument where the participants are committed to the conversational form of arguing without actually disagreeing. It’s useful to catch heated agreement early. Then if you want to go on yelling at each other, fine, but...'
+output_template: 'Pattern: You are locked in an argument & you want progress.
+
+  Transformation: Pause & make a list of everything you agree on.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

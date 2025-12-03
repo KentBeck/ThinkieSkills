@@ -1,0 +1,41 @@
+id: your_position
+name: Your Position
+intent: summarize the other party’s position in a way they would agree with.
+triggers:
+- a conversation has gotten stuck short of resolutio...
+preconditions:
+- a conversation has gotten stuck short of resolution but the conversation remains promising.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: a conversation has gotten stuck short of resolution but the conversation remains promising..
+
+    Your goal is to help them apply this transformation: summarize the other party’s position in a way they would agree with..
+
+
+    Context:
+
+    It’s natural to judge as I go along. I’m having a conversation with someone. I’m thinking, yeah, I don’t think you grasp the whole situation. But maybe I’m missing something.
+
+    All that judgement interferes with actually listening. Often I’ll have wide areas of agreement with someone but sitting in judgement keeps me from seeing that we’re actually close.
+
+    Thinkie Your Position is a way to suspend judgement for a moment, to encourage listening fully, to reconnect with my conversational partner. “Le...'
+output_template: 'Pattern: a conversation has gotten stuck short of resolution but the conversation remains promising.
+
+  Transformation: summarize the other party’s position in a way they would agree with.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

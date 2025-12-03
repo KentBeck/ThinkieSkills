@@ -1,0 +1,43 @@
+id: nash_equilibrium
+name: Nash Equilibrium
+intent: Take a step back & show the whole dynamic to all parties.
+triggers:
+- Two or more parties are stuck in a dysfunctional r...
+preconditions:
+- Two or more parties are stuck in a dysfunctional relationship but everyone refuses to change.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: “Why all this padding?
+- id: q_1
+  prompt: You don’t think it will actually take this long.”?
+scaffold:
+  guidance: 'The user is facing this pattern: Two or more parties are stuck in a dysfunctional relationship but everyone refuses to change..
+
+    Your goal is to help them apply this transformation: Take a step back & show the whole dynamic to all parties..
+
+
+    Context:
+
+    These kinds of change-encouraging Thinkies are fraught. People don’t make rational choices. I still tend to assume they do, leaving me baffled most of the time. However, it’s just not in me to do nothing.
+
+    The dynamic here is that everyone thinks they will lose if they change so they stay still no matter how unpleasant the status quo.
+
+    One of my most vivid professional encounters with a Nash Equilibrium was when interviewing a team that was perpetually late delivering. I asked the team how they es...'
+output_template: 'Pattern: Two or more parties are stuck in a dysfunctional relationship but everyone refuses to change.
+
+  Transformation: Take a step back & show the whole dynamic to all parties.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

@@ -1,0 +1,43 @@
+id: no_time_axis
+name: No Time Axis
+intent: Ignore time & graph the two factors as the two axes
+triggers:
+- You’re stuck trying to understand or explain the r...
+preconditions:
+- You’re stuck trying to understand or explain the relationship between two factors over time
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You’re stuck trying to understand or explain the relationship between two factors over time.
+
+    Your goal is to help them apply this transformation: Ignore time & graph the two factors as the two axes.
+
+
+    Context:
+
+    This Thinkie is a big departure. I haven’t said a word about visualizations so far, even though they are a big part of my thinking & communication strategy. I suppose my graphical Thinkies are so baked in by now that I hardly notice myself using them.
+
+    I claim absolutely no originality points for Thinkie No Time Axis. I stole it from Edward Tufte in his remarkable book
+
+    The Visual Display of Quantitative Information
+
+    . This book rewired how I thought. Get the hardback if you can afford it. It’s a b...'
+output_template: 'Pattern: You’re stuck trying to understand or explain the relationship between two factors over time
+
+  Transformation: Ignore time & graph the two factors as the two axes
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

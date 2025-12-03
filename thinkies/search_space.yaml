@@ -1,0 +1,53 @@
+id: search_space
+name: Search Space
+intent: Treat the choice of action as moves around a search space. Characterize the space.
+triggers:
+- You need to act in a context where you can’t predi...
+preconditions:
+- You need to act in a context where you can’t predict what the result of actions will be.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Observe whether the space is smooth or spiky. Do small changes in action result in large changes in outcome?
+scaffold:
+  guidance: 'The user is facing this pattern: You need to act in a context where you can’t predict what the result of actions will be..
+
+    Your goal is to help them apply this transformation: Treat the choice of action as moves around a search space. Characterize the space..
+
+
+    Context:
+
+    Ensure that actions are reversible.
+
+    Identify the dimensions of variability.
+
+    Observe whether the space is smooth or spiky. Do small changes in action result in large changes in outcome?
+
+    Identify the cost of missing a good outcome.
+
+    Then search:
+
+    Take an action, at random if you have no better starting place.
+
+    Use your observation about smooth versus spiky to determine how far away to take the next action.
+
+    Be prepared to update the dimensions of variability based on experience.
+
+    Optimize to reduce the...'
+output_template: 'Pattern: You need to act in a context where you can’t predict what the result of actions will be.
+
+  Transformation: Treat the choice of action as moves around a search space. Characterize the space.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

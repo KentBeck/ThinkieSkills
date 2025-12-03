@@ -1,0 +1,53 @@
+id: just_apply
+name: Just Apply
+intent: take a model or an analogy or a frame & just apply it.
+triggers:
+- you’re faced with a confusing situation & you don’...
+preconditions:
+- you’re faced with a confusing situation & you don’t know what to do next.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: If this was a queueing theory problem, what are the parts?
+- id: q_1
+  prompt: What are the stations?
+- id: q_2
+  prompt: What are the connections between stations?
+- id: q_3
+  prompt: How is demand signaled?
+- id: q_4
+  prompt: What is the distribution of latency, throughput, & variance?
+- id: q_5
+  prompt: Where are buffers?
+scaffold:
+  guidance: 'The user is facing this pattern: you’re faced with a confusing situation & you don’t know what to do next..
+
+    Your goal is to help them apply this transformation: take a model or an analogy or a frame & just apply it..
+
+
+    Context:
+
+    Don’t worry about whether the model “makes sense”. (This applies the Thinkie Separate Observation From Judgement) ((Me using a Thinkie to explain a Thinkie applies the Thinkie Self Description)). Just apply it. Naively.
+
+    Examples (always the hard part):
+
+    If this was a queueing theory problem, what are the parts? What are the stations? What are the connections between stations? How is demand signaled? What is the distribution of latency, throughput, & variance? Where are buffers?
+
+    If this was a soci...'
+output_template: 'Pattern: you’re faced with a confusing situation & you don’t know what to do next.
+
+  Transformation: take a model or an analogy or a frame & just apply it.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

@@ -1,0 +1,41 @@
+id: edges
+name: Edges
+intent: Increase the interaction of different kinds of resources
+triggers:
+- You aren’t getting enough resources coming in exte...
+preconditions:
+- You aren’t getting enough resources coming in externally to be successful
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Okay, this Thinkie is pretty abstract as stated. Let’s start with an analogy. If you have a pond, would rather it be round or irregular?
+scaffold:
+  guidance: 'The user is facing this pattern: You aren’t getting enough resources coming in externally to be successful.
+
+    Your goal is to help them apply this transformation: Increase the interaction of different kinds of resources.
+
+
+    Context:
+
+    Okay, this Thinkie is pretty abstract as stated. Let’s start with an analogy. If you have a pond, would rather it be round or irregular?
+
+    The temptation is to make the pond round. After all, the round pond maximizes the efficiency of the excavator. (This is the mistake of valuing “simplicity” in XP, about which way more later.) Here’s the thing.
+
+    When you live at the edge between two biomes, you have access to two sets of resources. Riparian (“on the river bank”, but you probably already knew that...'
+output_template: 'Pattern: You aren’t getting enough resources coming in externally to be successful
+
+  Transformation: Increase the interaction of different kinds of resources
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

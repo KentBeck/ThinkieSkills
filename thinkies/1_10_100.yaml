@@ -1,0 +1,53 @@
+id: '1_10_100'
+name: 1 10 100
+intent: quantify the order of magnitude of the worry.
+triggers:
+- progress is blocked by a big, scary worry....
+preconditions:
+- progress is blocked by a big, scary worry.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Is this a Thinkie or not, and why?
+scaffold:
+  guidance: 'The user is facing this pattern: progress is blocked by a big, scary worry..
+
+    Your goal is to help them apply this transformation: quantify the order of magnitude of the worry..
+
+
+    Context:
+
+    Paul Tavis
+
+    posted this Thinkie
+
+    . I realized have it too, in slightly different form.
+
+    “We can’t do that. It’s too expensive.”
+
+    ”$1000? $10,000? $100,000?”
+
+    ”Oh, not $100,000.”
+
+    One of the tricks of using this Thinkie is to pick the magnitudes so the largest one is absurdly high, then work backwards from there.
+
+    Part of what makes this Thinkie work is that it’s not asking for an estimate, which is a potentially unbounded amount of work & creates downside for the estimator.
+
+    This Thinkie also stretches ...'
+output_template: 'Pattern: progress is blocked by a big, scary worry.
+
+  Transformation: quantify the order of magnitude of the worry.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

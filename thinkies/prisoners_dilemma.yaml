@@ -1,0 +1,43 @@
+id: prisoners_dilemma
+name: Prisoners Dilemma
+intent: Model the situation as a Prisoners’ Dilemma. If it fits, apply Thinkie Put Skin In The Game or iteration to break the impasse.
+triggers:
+- Two or more parties are struggling to cooperate....
+preconditions:
+- Two or more parties are struggling to cooperate.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: What makes the Prisoners’ Dilemma intractable is the lack of information. The way out?
+- id: q_1
+  prompt: Information.?
+scaffold:
+  guidance: 'The user is facing this pattern: Two or more parties are struggling to cooperate..
+
+    Your goal is to help them apply this transformation: Model the situation as a Prisoners’ Dilemma. If it fits, apply Thinkie Put Skin In The Game or iteration to break the impasse..
+
+
+    Context:
+
+    To recap, Prisoners’ Dilemma is a game where 2 parties are arrested. If neither confesses, they both go free. If one confesses & the other doesn’t, the squealer goes free & the other prisoner goes to prison. If they both confess, they both go to prison but for less time.
+
+    See if the parties in the impasse are feeling like they are in a Prisoners’ Dilemma. “If I work on this urgent task Saturday & you don’t work Saturday I’ll feel like a sucker.”
+
+    What makes the Prisoners’ Dilemma intractable is th...'
+output_template: 'Pattern: Two or more parties are struggling to cooperate.
+
+  Transformation: Model the situation as a Prisoners’ Dilemma. If it fits, apply Thinkie Put Skin In The Game or iteration to break the impasse.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

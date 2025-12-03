@@ -1,0 +1,43 @@
+id: the_real_question
+name: The Real Question
+intent: Ask, “What’s the real question?”
+triggers:
+- Someone asks you for information that makes no sen...
+preconditions:
+- Someone asks you for information that makes no sense.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Asking, “What’s the real question?
+- id: q_1
+  prompt: ”, the more likely it is that there’s something important remaining concealed.?
+scaffold:
+  guidance: 'The user is facing this pattern: Someone asks you for information that makes no sense..
+
+    Your goal is to help them apply this transformation: Ask, “What’s the real question?”.
+
+
+    Context:
+
+    Fred George suggested Thinkie The Real Question after reading Thinkie Legibility. It’s another way to get to the actual issue.
+
+    Here’s the thing, though. Sometimes people don’t want to get to the real issue. They know their fears are absurd, maybe. Or they’re ashamed of the real issue. Or maybe they don’t know what the real issue is & so they’re fishing.
+
+    Asking, “What’s the real question?” works best in an ongoing relationship. Don’t build relationships at work just because they enhance productiv...'
+output_template: 'Pattern: Someone asks you for information that makes no sense.
+
+  Transformation: Ask, “What’s the real question?”
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

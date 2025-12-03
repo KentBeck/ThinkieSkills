@@ -1,0 +1,51 @@
+id: explore_or_extract
+name: Explore Or Extract
+intent: Mentally flip a coin (or actually flip an actual coin). That way you don’t have to feel bad about either option.
+triggers:
+- You’re faced with a choice between doing something...
+preconditions:
+- You’re faced with a choice between doing something the same old way or trying a new way.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: . Given a bank of slot machines with different-and-unknown payouts, how do you decide in which machine to place your next quarter?
+scaffold:
+  guidance: 'The user is facing this pattern: You’re faced with a choice between doing something the same old way or trying a new way..
+
+    Your goal is to help them apply this transformation: Mentally flip a coin (or actually flip an actual coin). That way you don’t have to feel bad about either option..
+
+
+    Context:
+
+    First, it’s not really 50/50. Adjust the odds based on your situation—the risks, the potential gains, ergodicity (chance of game over), you personal desire for novelty or certainty.
+
+    Thinkie Explore or Extract is based on the
+
+    multi-armed bandit problem
+
+    . Given a bank of slot machines with different-and-unknown payouts, how do you decide in which machine to place your next quarter?
+
+    The provably optimal algorithm is:
+
+    Start with equal estimated payouts
+
+    Loop:
+
+    Simulate putting a quarter into all machi...'
+output_template: 'Pattern: You’re faced with a choice between doing something the same old way or trying a new way.
+
+  Transformation: Mentally flip a coin (or actually flip an actual coin). That way you don’t have to feel bad about either option.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

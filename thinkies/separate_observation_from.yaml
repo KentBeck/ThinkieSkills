@@ -1,0 +1,37 @@
+id: separate_observation_from
+name: Separate Observation From
+intent: List the externally observable facts about the situation. With the list in hand, judge the situation.
+triggers:
+- You are getting carried away in your reaction to a situation.
+preconditions:
+- You are interested in Separate Observation From.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: List the externally observable facts about the situation. With the list in hand, judge the situation..
+
+
+    Context:
+
+    Say I’m getting feedback face-to-face with my boss. I don’t like what they are saying. I start to feel defensive. Rather than let that feeling generate more, stronger feelings I instead list to myself the observable facts about what is happening:
+
+    They are leaning forward.
+
+    When they began talking about me their voice rose in pitch & volume.
+
+    They said I had been late twice last week.
+
+    They said they couldn’t rely on me.
+
+    My shoulders are hunched up to my ears.
+
+    These are all things that someone revie...'
+output_template: "Pattern: \nTransformation: List the externally observable facts about the situation. With the list in hand, judge the situation.\n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

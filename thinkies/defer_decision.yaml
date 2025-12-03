@@ -1,0 +1,39 @@
+id: defer_decision
+name: Defer Decision
+intent: Don’t decide today. You can say, “What would happen if we just didn’t decide for a while?” Alternatively, “What would happen if we didn’t decide until April 1?”
+triggers:
+- A decision is being made & you’re not convinced al...
+preconditions:
+- A decision is being made & you’re not convinced all the relevant information is available or that the team is not all on board.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: A decision is being made & you’re not convinced all the relevant information is available or that the team is not all on board..
+
+    Your goal is to help them apply this transformation: Don’t decide today. You can say, “What would happen if we just didn’t decide for a while?” Alternatively, “What would happen if we didn’t decide until April 1?”.
+
+
+    Context:
+
+    The second of three decision-related Thinkies.
+
+    Sometimes people become anxious in the face of ambiguity or uncertainty. Rather than face their discomfort, sometimes they (and by “they” I mean “I”) prematurely resolve the ambiguity. Ambiguous states can be tremendously productive (also tremendously destructive—if this stuff was easy then regular people could do it). This Thinkie can help you avoid making decisions too soon....'
+output_template: 'Pattern: A decision is being made & you’re not convinced all the relevant information is available or that the team is not all on board.
+
+  Transformation: Don’t decide today. You can say, “What would happen if we just didn’t decide for a while?” Alternatively, “What would happen if we didn’t decide until April 1?”
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

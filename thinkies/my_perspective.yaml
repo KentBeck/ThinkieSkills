@@ -1,0 +1,41 @@
+id: my_perspective
+name: My Perspective
+intent: invite them to look at the situation from your perspective.
+triggers:
+- you’re having trouble communicating with someone....
+preconditions:
+- you’re having trouble communicating with someone.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: you’re having trouble communicating with someone..
+
+    Your goal is to help them apply this transformation: invite them to look at the situation from your perspective..
+
+
+    Context:
+
+    I know, I know. This is the opposite of the usual advice to look at the situation from the other person’s perspective. It’s a Thinkie. It generates ideas, not good ideas.
+
+    I’ve used this when evaluating investment opportunities. The entrepreneur is telling me all about their cool technology, what amazing uses people will put it to. I’m not convinced.
+
+    I could just say “no” at this point. Thinkie My Perspective says instead to offer them my point of view, to give them a chance to speak more persuas...'
+output_template: 'Pattern: you’re having trouble communicating with someone.
+
+  Transformation: invite them to look at the situation from your perspective.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

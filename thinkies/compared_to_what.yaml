@@ -1,0 +1,51 @@
+id: compared_to_what
+name: Compared To What
+intent: “Compared to what?”
+triggers:
+- You hear a judgement without context....
+preconditions:
+- You hear a judgement without context.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: “Development is so slow.” “Compared to what?
+- id: q_1
+  prompt: ”—This sparks interesting conversations. Compared to a year ago?
+- id: q_2
+  prompt: Okay, what changed in that time?
+- id: q_3
+  prompt: Compared to another team?
+- id: q_4
+  prompt: Compared to someone’s demands?
+scaffold:
+  guidance: 'The user is facing this pattern: You hear a judgement without context..
+
+    Your goal is to help them apply this transformation: “Compared to what?”.
+
+
+    Context:
+
+    Comparison is the thief of joy. But also a useful tool.
+
+    This is another highly profitable Thinkie. It doesn’t take much effort once you identify the pattern. The transformation also doesn’t take much effort, at least not until you start digging in.
+
+    “Development is so slow.” “Compared to what?”—This sparks interesting conversations. Compared to a year ago? Okay, what changed in that time? Compared to another team? Compared to someone’s demands?
+
+    “We can’t stop reviewing code. The design will degra...'
+output_template: 'Pattern: You hear a judgement without context.
+
+  Transformation: “Compared to what?”
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

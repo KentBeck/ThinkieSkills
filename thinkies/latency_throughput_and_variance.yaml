@@ -1,0 +1,41 @@
+id: latency_throughput_and_variance
+name: Latency Throughput And Variance
+intent: The situation is under-constrained. “Go faster!” can mean any of several things. Find out which, then bias towards reducing variance first.
+triggers:
+- Someone says, “I need you to go faster!” You’re go...
+preconditions:
+- Someone says, “I need you to go faster!” You’re going as fast as you can. What do you do?
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: I checked with myself—am I making this up?
+scaffold:
+  guidance: 'The user is facing this pattern: Someone says, “I need you to go faster!” You’re going as fast as you can. What do you do?.
+
+    Your goal is to help them apply this transformation: The situation is under-constrained. “Go faster!” can mean any of several things. Find out which, then bias towards reducing variance first..
+
+
+    Context:
+
+    I ordered my first Waymo autonomous ride last night. When I arrived I realized that I was much more relaxed than I usually am after a lyftuber. What was going on?
+
+    When I have a human driver, I feel the need to monitor what they do. First, just to see if they are actually going to pick me up or if they are driving off into the sunset. Then every turn is a chance for them to make a mistake. And they make enough mistakes that it’s valuable to catch one early.
+
+    I checked with myself—am I making this ...'
+output_template: 'Pattern: Someone says, “I need you to go faster!” You’re going as fast as you can. What do you do?
+
+  Transformation: The situation is under-constrained. “Go faster!” can mean any of several things. Find out which, then bias towards reducing variance first.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

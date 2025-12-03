@@ -1,0 +1,43 @@
+id: survivable
+name: Survivable
+intent: 'Ask if the negative outcome is survivable. Either:'
+triggers:
+- You are stuck making a decision....
+preconditions:
+- You are stuck making a decision.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You are stuck making a decision..
+
+    Your goal is to help them apply this transformation: Ask if the negative outcome is survivable. Either:.
+
+
+    Context:
+
+    Luca Delanna’s book Ergodicity spawned (or brought into focus) a bunch of Thinkies for me. This is the root.
+
+    The negative outcome is survivable, in which case do the quickest, cheapest thing that generates value (information, time, or other resources). [ed: what are the Thinkies that generate cheap experiments?]
+
+    The negative outcome puts you out of the game permanently, in which case mitigate risks. But get moving.
+
+    Jeff Bezos gave these options the inspiring names “Type One” and “Type Two”. “Rev...'
+output_template: 'Pattern: You are stuck making a decision.
+
+  Transformation: Ask if the negative outcome is survivable. Either:
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

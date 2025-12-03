@@ -1,0 +1,41 @@
+id: aligning_incentive
+name: Aligning Incentive
+intent: Give them an incentive that will influence their actions towards a common goal
+triggers:
+- You can see that folks are working at cross purpos...
+preconditions:
+- You can see that folks are working at cross purposes
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You can see that folks are working at cross purposes.
+
+    Your goal is to help them apply this transformation: Give them an incentive that will influence their actions towards a common goal.
+
+
+    Context:
+
+    When I say “incentive”, folks immediately think “money”. While money is a powerful incentive, it also tends to distort behavior, precisely because it is so useful & so personal. Still, “$100 to everyone when we all get there,” will influence behavior.
+
+    More powerful still is a sense of belonging. Take Goldratt’s Scout story—tying a group of hikers together gives them an aligning incentive. Everyone gets there or no one does.
+
+    Contrast Thinkie Aligning Incentive with pure talk with no backup. “You ...'
+output_template: 'Pattern: You can see that folks are working at cross purposes
+
+  Transformation: Give them an incentive that will influence their actions towards a common goal
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

@@ -1,0 +1,39 @@
+id: else
+name: Else
+intent: What happens if the condition does not hold?
+triggers:
+- You have a situation where a condition has a conse...
+preconditions:
+- You have a situation where a condition has a consequence.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You have a situation where a condition has a consequence..
+
+    Your goal is to help them apply this transformation: What happens if the condition does not hold?.
+
+
+    Context:
+
+    The best example I have of this Thinkie is TCR, an alternative coding workflow. I was telling a coding camp at Iterate about wanting to always be able to get back to green tests. I described a shell command I used—”test.sh && git commit -m ‘passed’”. Oddmund Strømme said, “By symmetry, we should revert if the tests fail.” Bingo!
+
+    Every if might have an else. At least ask yourself what it would be if it existed. Classic Thinkie idea generation....'
+output_template: 'Pattern: You have a situation where a condition has a consequence.
+
+  Transformation: What happens if the condition does not hold?
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

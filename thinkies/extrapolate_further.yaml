@@ -1,0 +1,39 @@
+id: extrapolate_further
+name: Extrapolate Further
+intent: Extrapolate further than other people, further than seems reasonable.
+triggers:
+- You’re trying to predict the consequences of a tre...
+preconditions:
+- You’re trying to predict the consequences of a trend.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Why is Extrapolate Further hard?
+scaffold:
+  guidance: 'The user is facing this pattern: You’re trying to predict the consequences of a trend..
+
+    Your goal is to help them apply this transformation: Extrapolate further than other people, further than seems reasonable..
+
+
+    Context:
+
+    I learned this Thinkie watching Bill Joy (Sun founder) talk about processor performance when I was a wee engineer at Tektronix. 32-bit processors had just appeared, with awesome performance. Intel & Motorola were promising great improvements in the next few years. Bill stood up & talked about how Sun’s SPARC processor would exceed 1G instructions per second in 10 years, and then talked about what amazing new applications such infinite computing would enable.
+
+    As wee engineers are, I was inspired,...'
+output_template: 'Pattern: You’re trying to predict the consequences of a trend.
+
+  Transformation: Extrapolate further than other people, further than seems reasonable.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

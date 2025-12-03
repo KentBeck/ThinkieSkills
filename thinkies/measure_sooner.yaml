@@ -1,0 +1,27 @@
+id: measure_sooner
+name: Measure Sooner
+intent: measure something that seems correlated to success sooner in the process
+triggers:
+- you’re measuring the end of a multi-stage process but what you’re measuring doesn’t give you any guidance about what to change.
+preconditions:
+- You are interested in Measure Sooner.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: measure something that seems correlated to success sooner in the process.
+
+
+    Context:
+
+    Example: you’re measuring errors occurring in production, but the numbers aren’t helping you spot what to improve. Measure something upstream, like the number of errors in integration or measuring which tests fail most often or the size of diffs.
+
+    Caveat: measuring sooner risks micro-optimization. You aren’t trying to find a proxy goal, the ever-elusive “leading indicator”. You’re using the earlier measure as a flashlight to focus your attention on the whole process by understanding one of the st...'
+output_template: "Pattern: \nTransformation: measure something that seems correlated to success sooner in the process\n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

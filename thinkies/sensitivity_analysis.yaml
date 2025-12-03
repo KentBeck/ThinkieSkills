@@ -1,0 +1,47 @@
+id: sensitivity_analysis
+name: Sensitivity Analysis
+intent: pick an input that seems to matter. Vary it (in a model if possible). See if the output changes. If not, let it go.
+triggers:
+- you need to tune the operation of a system with ma...
+preconditions:
+- you need to tune the operation of a system with many inputs. Which dial to twist or lever to pull?
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Tidy Together?
+- id: q_1
+  prompt: is an example of Sensitivity Analysis. I’m discouraged by the royalties I’m receiving. Does my feeling match the facts?
+scaffold:
+  guidance: 'The user is facing this pattern: you need to tune the operation of a system with many inputs. Which dial to twist or lever to pull?.
+
+    Your goal is to help them apply this transformation: pick an input that seems to matter. Vary it (in a model if possible). See if the output changes. If not, let it go..
+
+
+    Context:
+
+    My recent post on my motivation for writing
+
+    Tidy Together?
+
+    is an example of Sensitivity Analysis. I’m discouraged by the royalties I’m receiving. Does my feeling match the facts?
+
+    In the context of all of my sources of revenue, book royalties hardly matter. My financial situation is not sensitive to changes in book royalties, so let it go. My feelings are misleading me in this case.
+
+    Faced with a complex system, I have a tendency to fixate on one input. I can keep twiddling it long past the point ...'
+output_template: 'Pattern: you need to tune the operation of a system with many inputs. Which dial to twist or lever to pull?
+
+  Transformation: pick an input that seems to matter. Vary it (in a model if possible). See if the output changes. If not, let it go.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

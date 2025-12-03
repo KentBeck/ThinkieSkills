@@ -1,0 +1,31 @@
+id: half_wavelength_shift
+name: Half Wavelength Shift
+intent: What happens if you start with B, C, or D?
+triggers:
+- You have a multi-stage process A→B→C→D
+preconditions:
+- You are interested in Half Wavelength Shift.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Test-driven development is my favorite example of this Thinkie. Everybody codes & then tests?
+- id: q_1
+  prompt: What if we test & then code?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: What happens if you start with B, C, or D?.
+
+
+    Context:
+
+    Test-driven development is my favorite example of this Thinkie. Everybody codes & then tests? What if we test & then code?
+
+    The Half Wavelength Shift will test your skill at deferring judgement. A comes before B, C, & D for good reasons. Setting those reasons aside for a moment is likely to be hard.
+
+    The seeds of the Half Wavelength Shift were planted when my dad let me play with his oscilloscope & wave generator. I got used to seeing sine waves & then watching them shift horizontally. Just becaus...'
+output_template: "Pattern: \nTransformation: What happens if you start with B, C, or D?\n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

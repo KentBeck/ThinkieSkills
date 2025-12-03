@@ -1,0 +1,39 @@
+id: organizing_thinkies
+name: Organizing Thinkies
+intent: Help you with Organizing Thinkies.
+triggers:
+- organizing thinkies
+preconditions:
+- You are interested in Organizing Thinkies.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: .
+
+
+    Context:
+
+    Here’s what Claude came up with for the 70-ish Thinkies drafted so far. I’ll put all the Thinkies in a single document soon, but I wanted some ordering that wasn’t just “the order in which they were written”.
+
+    1. Learning Path (Pedagogical Organization)
+
+    Foundation Level: Core Concepts and Simple Applications
+
+    Basic Pattern Recognition
+
+    Can''t/Because (converting blockers to conditions)
+
+    "Obviously..." (challenging assumptions)
+
+    Laughter (noticing suppressed insights)
+
+    Reverse Phrase (language pattern t...'
+output_template: "Pattern: \nTransformation: \n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

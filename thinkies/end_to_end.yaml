@@ -1,0 +1,45 @@
+id: end_to_end
+name: End To End
+intent: What would it looks like if you structured the project to go end-to-end for a tiny subset of the possible inputs instead?
+triggers:
+- You have a large, complicated, multi-layered proje...
+preconditions:
+- You have a large, complicated, multi-layered project. Typically folks will structure the project layer-by-layer, because “efficiency”.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You have a large, complicated, multi-layered project. Typically folks will structure the project layer-by-layer, because “efficiency”..
+
+    Your goal is to help them apply this transformation: What would it looks like if you structured the project to go end-to-end for a tiny subset of the possible inputs instead?.
+
+
+    Context:
+
+    For example, in one payroll system I was asked to consult for, 100+ people had worked for 2+ years & still couldn’t print a single check. I told the team that we would print a check 3 weeks after rebooting the project. But…but…but… As my Pappy often told me, “You’re not a motorboat.”
+
+    1
+
+    There are myriad benefits of going end-to-end early:
+
+    Feedback about the integration of all those layers. Integration problems can be expensive & unpredictable. Best to get those sussed early.
+
+    It helps you make bet...'
+output_template: 'Pattern: You have a large, complicated, multi-layered project. Typically folks will structure the project layer-by-layer, because “efficiency”.
+
+  Transformation: What would it looks like if you structured the project to go end-to-end for a tiny subset of the possible inputs instead?
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

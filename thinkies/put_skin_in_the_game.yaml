@@ -1,0 +1,45 @@
+id: put_skin_in_the_game
+name: Put Skin In The Game
+intent: Re-arrange feedback so the decision maker directly experiences the consequences of their decisions.
+triggers:
+- Someone needs to make better decisions. They have ...
+preconditions:
+- Someone needs to make better decisions. They have plenty of information. They just aren’t using it well.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Maybe if the Product Owner wore an insulin pump?
+scaffold:
+  guidance: 'The user is facing this pattern: Someone needs to make better decisions. They have plenty of information. They just aren’t using it well..
+
+    Your goal is to help them apply this transformation: Re-arrange feedback so the decision maker directly experiences the consequences of their decisions..
+
+
+    Context:
+
+    I had made a comment about how metrics-driven product development ends up
+
+    subtracting
+
+    value for users in the absence of foundational principles, using the example of the deterioration of the Fitbit experience. Alex replied:
+
+    Alex Polyakov
+
+    Unfortunately some of us have to wear the pain on our bodies. As a diabetic, my insulin pump ( and I tried a ton of them ) is the worst case of useless functions and beeping and alerting that I''m sure makes sense to the FDA to approve, but is absolutely horrible...'
+output_template: 'Pattern: Someone needs to make better decisions. They have plenty of information. They just aren’t using it well.
+
+  Transformation: Re-arrange feedback so the decision maker directly experiences the consequences of their decisions.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

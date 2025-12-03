@@ -1,0 +1,45 @@
+id: composed_solution
+name: Composed Solution
+intent: Imagine a sequence of steps that seem like they would solve the problem.
+triggers:
+- You’re stuck solving a big problem....
+preconditions:
+- You’re stuck solving a big problem.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: A key part of Composed Solution is imagining the intermediate results. What form will they take?
+- id: q_1
+  prompt: For example, compilers use various intermediate forms to represent a partially compiled program.?
+scaffold:
+  guidance: 'The user is facing this pattern: You’re stuck solving a big problem..
+
+    Your goal is to help them apply this transformation: Imagine a sequence of steps that seem like they would solve the problem..
+
+
+    Context:
+
+    Scale Down unstucked the problem solving process by ignoring the whole problem & just addressing a seemingly-knowable seeming-subpart. Composed Solution, by contrast, solves the whole problem by seeing it as a pipeline. You don’t need perfect knowledge of any given step, you just need confidence that if we
+
+    could
+
+    do these steps in a row, the whole problem would be solved.
+
+    A key part of Composed Solution is imagining the intermediate results. What form will they take? For example, compilers use va...'
+output_template: 'Pattern: You’re stuck solving a big problem.
+
+  Transformation: Imagine a sequence of steps that seem like they would solve the problem.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

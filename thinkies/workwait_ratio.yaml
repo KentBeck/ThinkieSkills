@@ -1,0 +1,37 @@
+id: workwait_ratio
+name: Workwait Ratio
+intent: trace a typical recent work item through the process. Add up the time spent actually working on the item & the time the item spends waiting. Divide.
+triggers:
+- you have a multi-step process where responsibility moves from person to person (or organization to organization)
+preconditions:
+- You are interested in Workwait Ratio.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: working on this high-priority job?
+- id: q_1
+  prompt: What to do to reduce this ratio?
+- id: q_2
+  prompt: If it’s not obvious, there’ll be future Thinkies for that.?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: trace a typical recent work item through the process. Add up the time spent actually working on the item & the time the item spends waiting. Divide..
+
+
+    Context:
+
+    Sometimes this is all you need to do to transform a process. How in the world are we spending 93% of our time
+
+    not
+
+    working on this high-priority job?
+
+    Sometimes I draw swim lanes to visualize what is happening.
+
+    What to do to reduce this ratio? If it’s not obvious, there’ll be future Thinkies for that....'
+output_template: "Pattern: \nTransformation: trace a typical recent work item through the process. Add up the time spent actually working on the item & the time the item spends waiting. Divide.\n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

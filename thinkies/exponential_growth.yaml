@@ -1,0 +1,43 @@
+id: exponential_growth
+name: Exponential Growth
+intent: Compare growth rates, not absolute size. If the small thing is growing much faster then yes, take it seriously.
+triggers:
+- Is this small thing competition for this large thi...
+preconditions:
+- Is this small thing competition for this large thing?
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Early in COVID I used Thinkie Exponential Growth. People were saying, “Why all the shut downs?
+- id: q_1
+  prompt: They’re saying 50,000 people might die. 50,000 people die in traffic accidents every year. We don’t shut down the roads.”?
+- id: q_2
+  prompt: Or right now the migration to BlueSky. “Yeah, but BlueSky is 18 millionMAUs & Twitter is 400 million. 1/20th?
+scaffold:
+  guidance: 'The user is facing this pattern: Is this small thing competition for this large thing?.
+
+    Your goal is to help them apply this transformation: Compare growth rates, not absolute size. If the small thing is growing much faster then yes, take it seriously..
+
+
+    Context:
+
+    Early in COVID I used Thinkie Exponential Growth. People were saying, “Why all the shut downs? They’re saying 50,000 people might die. 50,000 people die in traffic accidents every year. We don’t shut down the roads.”
+
+    False equivalence. There’s no path from 50K traffic deaths to 500K. If traffic deaths are up or down a few percent there’s strong reaction. Apply Thinkie Exponential Growth. COVID deaths are still growing. The rate of infection is still growing. So COVID isn’t at all like traffic de...'
+output_template: 'Pattern: Is this small thing competition for this large thing?
+
+  Transformation: Compare growth rates, not absolute size. If the small thing is growing much faster then yes, take it seriously.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

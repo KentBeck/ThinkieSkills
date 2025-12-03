@@ -1,0 +1,45 @@
+id: and_then
+name: And Then
+intent: Ask, “…and then?”
+triggers:
+- You have a potential decision to evaluate....
+preconditions:
+- You have a potential decision to evaluate.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: So ask, “…and then?
+- id: q_1
+  prompt: ”, “…and then?
+- id: q_2
+  prompt: ”, “…and then?
+scaffold:
+  guidance: 'The user is facing this pattern: You have a potential decision to evaluate..
+
+    Your goal is to help them apply this transformation: Ask, “…and then?”.
+
+
+    Context:
+
+    “We need more productivity. Let’s set higher goals for the number of lines of code programmers write per day.”
+
+    We all know how this ends. And yet, and yet, I have personally witnessed the introduction of line counts to performance evaluation at a large, highly respected engineering organization. In the last decade.
+
+    I don’t know what it is that keeps folks from following up on the consequences of their proposals, even when prediction is easy. Now, granted, sometimes it’s hard or impossible to gue...'
+output_template: 'Pattern: You have a potential decision to evaluate.
+
+  Transformation: Ask, “…and then?”
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

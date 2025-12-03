@@ -1,0 +1,41 @@
+id: grow_then_split
+name: Grow Then Split
+intent: Start with one tiny element. Grow it. When it gets uncomfortably large, split it along the revealed natural fault lines.
+triggers:
+- You are creating something that will end up with m...
+preconditions:
+- You are creating something that will end up with many elements & you are stuck on where to start.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You are creating something that will end up with many elements & you are stuck on where to start..
+
+    Your goal is to help them apply this transformation: Start with one tiny element. Grow it. When it gets uncomfortably large, split it along the revealed natural fault lines..
+
+
+    Context:
+
+    The “natural” tendency is to say, “We know we’re going to split X from Y, so let’s do it now.” We’ll have a front-end & a back-end. We’ll put tests in this directory & code in that directory. We’ll have a team for each of the applications & a team for shared infrastructure.
+
+    Those outcomes are fine. It’s the timing that this Thinkie addresses. While the system is small, the cost of lumping a little too much stuff together is small.
+
+    Be patient. You may “know” that the system will be divided in X &...'
+output_template: 'Pattern: You are creating something that will end up with many elements & you are stuck on where to start.
+
+  Transformation: Start with one tiny element. Grow it. When it gets uncomfortably large, split it along the revealed natural fault lines.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

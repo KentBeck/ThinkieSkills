@@ -1,0 +1,45 @@
+id: sampling_rate
+name: Sampling Rate
+intent: Increase your sampling rate.
+triggers:
+- You are monitoring a system & feel like you’re mis...
+preconditions:
+- You are monitoring a system & feel like you’re missing something.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You are monitoring a system & feel like you’re missing something..
+
+    Your goal is to help them apply this transformation: Increase your sampling rate..
+
+
+    Context:
+
+    Observing a system is a tradeoff between the cost of observation, the accuracy of observation. If you feel like you’re missing something, think about the ratio of the duration of events of interest to the frequency of sampling.
+
+    You’re sampling at some rate:
+
+    If events are short compared to this rate, you’re likely to miss them:
+
+    Sample more often:
+
+    However, this is a tradeoff. Each sample consumes resources. Reduce the cost per sample or reduce the sampling rate until you get a clear picture at a r...'
+output_template: 'Pattern: You are monitoring a system & feel like you’re missing something.
+
+  Transformation: Increase your sampling rate.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

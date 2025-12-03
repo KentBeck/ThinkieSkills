@@ -1,0 +1,45 @@
+id: set_based_design
+name: Set Based Design
+intent: Implement some of them all until one is clearly superior.
+triggers:
+- You are choosing between 2 or more options & you d...
+preconditions:
+- You are choosing between 2 or more options & you don’t have the information needed to choose wisely yet.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Should I use Go, Rust, C++, or JavaScript?
+- id: q_1
+  prompt: What if implementing them all is too expensive?
+- id: q_2
+  prompt: Thinkie Compared To What. Thinkie Fun Bit/Easy Bit. Or, yeah, sometimes you can only afford one roll of the dice.?
+scaffold:
+  guidance: 'The user is facing this pattern: You are choosing between 2 or more options & you don’t have the information needed to choose wisely yet..
+
+    Your goal is to help them apply this transformation: Implement some of them all until one is clearly superior..
+
+
+    Context:
+
+    I’m running into this right now with a personal project—a server-grade implementation of Smalltalk. Should I implement the virtual machine as a bytecode interpreter or an abstract syntax tree interpreter? Should I use Go, Rust, C++, or JavaScript?
+
+    I really don’t want to waste time on an implementation I end up throwing away. This is a personal project, with no chance of commercial payoff. However, it’s been a long time since I worked at this level so ignorance is abundant.
+
+    And so I’m trying most...'
+output_template: 'Pattern: You are choosing between 2 or more options & you don’t have the information needed to choose wisely yet.
+
+  Transformation: Implement some of them all until one is clearly superior.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

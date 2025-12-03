@@ -1,0 +1,39 @@
+id: reverse_causality
+name: Reverse Causality
+intent: Treat the effect as the cause.
+triggers:
+- You’ve tried to make a change by Thinkie Move Upst...
+preconditions:
+- 'You’ve tried to make a change by Thinkie Move Upstream [ed: not yet written].'
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: What if, instead of meetings causing slowness, slowness is causing meetings?
+scaffold:
+  guidance: 'The user is facing this pattern: You’ve tried to make a change by Thinkie Move Upstream [ed: not yet written]..
+
+    Your goal is to help them apply this transformation: Treat the effect as the cause..
+
+
+    Context:
+
+    Let’s say as your organization has grown there are so many meetings that no one can get any work pushed to production any more. You try just eliminating meetings but they spring back up like mushrooms after rain. It’s normal to see this as meetings causing slowness. Meeting → slowness.
+
+    What if, instead of meetings causing slowness, slowness is causing meetings? You used to make tens, then hundreds of changes a day to your system. Now you want to make thousands. But your organization just isn’t c...'
+output_template: 'Pattern: You’ve tried to make a change by Thinkie Move Upstream [ed: not yet written].
+
+  Transformation: Treat the effect as the cause.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

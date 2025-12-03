@@ -1,0 +1,39 @@
+id: force_decision
+name: Force Decision
+intent: “If we had to decide today, what would we decide?”
+triggers:
+- There’s a decision that needs to be made & nobody ...
+preconditions:
+- There’s a decision that needs to be made & nobody is making it for no good reason that you are aware of.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: There’s a decision that needs to be made & nobody is making it for no good reason that you are aware of..
+
+    Your goal is to help them apply this transformation: “If we had to decide today, what would we decide?”.
+
+
+    Context:
+
+    This is the first of 3 decision-related Thinkies. They completely contradict each other, which is a good example of Thinkie-ness. Each Thinkie generates an idea, which you then evaluate.
+
+    Either you’ll get an answer, in which case you have your decision, or you’ll get reasons for not deciding, in which case you know what you need to learn next....'
+output_template: 'Pattern: There’s a decision that needs to be made & nobody is making it for no good reason that you are aware of.
+
+  Transformation: “If we had to decide today, what would we decide?”
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

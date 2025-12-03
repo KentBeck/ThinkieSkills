@@ -1,0 +1,35 @@
+id: book_prototype
+name: Book Prototype
+intent: Help you with Book Prototype.
+triggers:
+- book prototype
+preconditions:
+- You are interested in Book Prototype.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: What other material would you need?
+- id: q_1
+  prompt: Would you buy limited edition signed prints of the pictures?
+- id: q_2
+  prompt: Does the text need the Thinkie title?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: .
+
+
+    Context:
+
+    Working with
+
+    I’ve been exploring how to better present Thinkies. Carlo is a sketch noter (not sure if he’d call himself that). As he learns Thinkies, he illustrates each one.
+
+    Presented for your feedback, here are a couple of mocked up pages containing, on the left, my text and, on the right, Carlo’s picture. If you had a book with 90 such pairings, would it be useful? What other material would you need? Would you buy limited edition signed prints of the pictures?
+
+    Does the text need the Thinkie t...'
+output_template: "Pattern: \nTransformation: \n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

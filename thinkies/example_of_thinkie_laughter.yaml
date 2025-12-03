@@ -1,0 +1,35 @@
+id: example_of_thinkie_laughter
+name: Example Of Thinkie Laughter
+intent: Help you with Example Of Thinkie Laughter.
+triggers:
+- example of thinkie laughter
+preconditions:
+- You are interested in Example Of Thinkie Laughter.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Smaller laugh, but still, “What madness is this?
+- id: q_1
+  prompt: That’s never going to happen.” Then silence as it sank in. Yeah, that?
+- id: q_2
+  prompt: utm_source=share&utm_medium=member_ios?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: .
+
+
+    Context:
+
+    A Thinkie, for those of you non-paying-subscribers, is a habit of creative thought. I publish one to paying subscribers every Tuesday. I’ve published about 60 so far, with 30 to go. Thinkie: Laughter says that when laughter is the response to an idea, try taking the idea seriously for a second.
+
+    Subscribe now
+
+    “I have a dream! What if the business said to the geeks, ‘No, it’s okay. Take a little longer if you need to.”
+
+    I’ve whined repeatedly about how hard it is to find good examples. Well, I had ...'
+output_template: "Pattern: \nTransformation: \n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

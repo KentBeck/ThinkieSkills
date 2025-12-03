@@ -1,0 +1,43 @@
+id: upsidedownside
+name: Upsidedownside
+intent: list the upside & downside consequences of the decision. Upside & no downside? Do it.
+triggers:
+- you’re faced with an evenly-balanced decision...
+preconditions:
+- you’re faced with an evenly-balanced decision
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Upside/downside is a great example of a Thinkie. I say, “What’s the upside & downside?
+- id: q_1
+  prompt: ”, I start thinking new thoughts, sometimes those thoughts help.?
+scaffold:
+  guidance: 'The user is facing this pattern: you’re faced with an evenly-balanced decision.
+
+    Your goal is to help them apply this transformation: list the upside & downside consequences of the decision. Upside & no downside? Do it..
+
+
+    Context:
+
+    I know this one sounds trite, but stay with me. When I’m facing a decision, even something as trivial as “should I post this”, I can get so wrapped up in the details of the decision & the expectations about possibly implementing the decision that I forget to pay attention to the consequences.
+
+    Upside/downside is a great example of a Thinkie. I say, “What’s the upside & downside?”, I start thinking new thoughts, sometimes those thoughts help.
+
+    I hesitate to use Trump as an example because, well, do...'
+output_template: 'Pattern: you’re faced with an evenly-balanced decision
+
+  Transformation: list the upside & downside consequences of the decision. Upside & no downside? Do it.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

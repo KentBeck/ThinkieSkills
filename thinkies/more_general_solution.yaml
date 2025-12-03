@@ -1,0 +1,41 @@
+id: more_general_solution
+name: More General Solution
+intent: You solve a more general problem of which your specific problem is a special case.
+triggers:
+- You’re stuck solving a complex problem....
+preconditions:
+- You’re stuck solving a complex problem.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You’re stuck solving a complex problem..
+
+    Your goal is to help them apply this transformation: You solve a more general problem of which your specific problem is a special case..
+
+
+    Context:
+
+    The following 3 Thinkies help get unstuck when solving a problem by reframing the solution.
+
+    The basic idea for More General Solution comes from mathematics, where it occurs frequently. In algebra you have the specific problem of finding the root(s) of an equation. Proving that every non-constant polynomial equation has at least one root in the complex numbers provides insight into the methods required to find root(s) of particular equation.
+
+    We applied More General Solution at Lifeware, where we ...'
+output_template: 'Pattern: You’re stuck solving a complex problem.
+
+  Transformation: You solve a more general problem of which your specific problem is a special case.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

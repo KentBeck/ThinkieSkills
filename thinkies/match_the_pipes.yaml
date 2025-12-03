@@ -1,0 +1,45 @@
+id: match_the_pipes
+name: Match The Pipes
+intent: Compare the capacity of each of the steps. Whichever step is the constraint, add capacity to it, even at the expense of other steps. Once the pipes match, you can think about how to improve overall capacity.
+triggers:
+- insufficient value is flowing through a series of ...
+preconditions:
+- insufficient value is flowing through a series of steps.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: insufficient value is flowing through a series of steps..
+
+    Your goal is to help them apply this transformation: Compare the capacity of each of the steps. Whichever step is the constraint, add capacity to it, even at the expense of other steps. Once the pipes match, you can think about how to improve overall capacity..
+
+
+    Context:
+
+    We’ve completed the language Thinkies & the project management Thinkies. A dozen down & 2-3 more dozen to go.
+
+    Now we’re getting into some systems thinking Thinkies. These address the natural human tendency to get bogged down in details & miss more-effective action at a different scale.
+
+    Divide et impera
+
+    is deeply impressed in our brains. If only we could break the problem into parts then solve the parts separately, then we’d go faster! Not so fast, buster.
+
+    We still have to integrate the separate ...'
+output_template: 'Pattern: insufficient value is flowing through a series of steps.
+
+  Transformation: Compare the capacity of each of the steps. Whichever step is the constraint, add capacity to it, even at the expense of other steps. Once the pipes match, you can think about how to improve overall capacity.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

@@ -1,0 +1,41 @@
+id: invert_the_goal
+name: Invert The Goal
+intent: try to achieve the opposite
+triggers:
+- you’re stuck trying to make progress toward a goal...
+preconditions:
+- you’re stuck trying to make progress toward a goal
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: (Or, applying Thinkie Invert the Goal, how can I fully feel all the shame, for you meta-circular nerds out there.)?
+scaffold:
+  guidance: 'The user is facing this pattern: you’re stuck trying to make progress toward a goal.
+
+    Your goal is to help them apply this transformation: try to achieve the opposite.
+
+
+    Context:
+
+    For example, say you’re trying to optimize a user experience & users refuse to cooperate. Despite your best ideas, user behavior remains unchanged. Invert the goal. What’s the largest change you can make to the experience that will result in no change in user behavior? Color? Layout? Flow? Language?
+
+    Eventually one of these experiments will fail. That is, a change will make a big difference in a surprising way.
+
+    Another example suggested by Ester Daniel Ytterbrink of Chocolate Driven Development f...'
+output_template: 'Pattern: you’re stuck trying to make progress toward a goal
+
+  Transformation: try to achieve the opposite
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

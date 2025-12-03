@@ -1,0 +1,39 @@
+id: growth_rate_not_absolute
+name: Growth Rate Not Absolute
+intent: Look at its growth rate, not its current size.
+triggers:
+- You’re trying to understand if a trend is signific...
+preconditions:
+- You’re trying to understand if a trend is significant.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: That’s the question. If they are awful but improving quickly, that is a completely different trend than if they are okay but not improving much.?
+scaffold:
+  guidance: 'The user is facing this pattern: You’re trying to understand if a trend is significant..
+
+    Your goal is to help them apply this transformation: Look at its growth rate, not its current size..
+
+
+    Context:
+
+    (Example from an American perspective.) Early in COVID pundits were comparing it to traffic fatalities. “50,000 people die on the road every year & we don’t shut down the whole economy as a result. We are on track for 50,000 COVID deaths. Stop panicking.”
+
+    The fallacy of this thinking is not the absolute numbers. As a society we choose 50K annual deaths as an acceptable tradeoff with transportation cost & speed. Okay. But  50K traffic deaths are not comparable to 50K COVID deaths. The difference ...'
+output_template: 'Pattern: You’re trying to understand if a trend is significant.
+
+  Transformation: Look at its growth rate, not its current size.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

@@ -1,0 +1,45 @@
+id: legibility
+name: Legibility
+intent: Listen carefully to understand the need they are satisfying with those metrics & find a way to meet that need another way
+triggers:
+- Someone is estimating or counting something that d...
+preconditions:
+- Someone is estimating or counting something that doesn’t matter
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: For example, how do you measure developer productivity?
+- id: q_1
+  prompt: What’s going on with fake precision?
+scaffold:
+  guidance: 'The user is facing this pattern: Someone is estimating or counting something that doesn’t matter.
+
+    Your goal is to help them apply this transformation: Listen carefully to understand the need they are satisfying with those metrics & find a way to meet that need another way.
+
+
+    Context:
+
+    For example, how do you measure developer productivity? There are all kinds of made up numbers floating around that simply can’t matter. Take number of PRs per developer per day. Tell me what my target is & I’ll hit that, regardless of my actual business progress.
+
+    What’s going on with fake precision?
+
+    Seeing Like a State
+
+    offers an explanation. States, that is central authorities, feel the need for their models of the world to be tidy. Square plots of land work great for tax assessment, not necess...'
+output_template: 'Pattern: Someone is estimating or counting something that doesn’t matter
+
+  Transformation: Listen carefully to understand the need they are satisfying with those metrics & find a way to meet that need another way
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

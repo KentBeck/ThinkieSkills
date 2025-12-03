@@ -1,0 +1,43 @@
+id: tutorial
+name: Tutorial
+intent: An action you take when you see that pattern to generate an idea
+triggers:
+- '"We can''t X because Y" Transform: "When (not Y), t...'
+preconditions:
+- '"We can''t X because Y" Transform: "When (not Y), then we can X"'
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Well, 102K now. But who’s counting?
+- id: q_1
+  prompt: What's a Thinkie?
+- id: q_2
+  prompt: Is the idea useful?
+scaffold:
+  guidance: 'The user is facing this pattern: "We can''t X because Y" Transform: "When (not Y), then we can X".
+
+    Your goal is to help them apply this transformation: An action you take when you see that pattern to generate an idea.
+
+
+    Context:
+
+    Well, 102K now. But who’s counting? I’m just glad to have started this unexpected conversation around the what, how, why, & most critically when of software design. It’s the conversations between practitioners that has most surprised & delighted me. Also the time & energy my paying subscribers liberate for my writing.
+
+    As you may have noticed, software design is only part of the swirl of ideas running around my head. My abstract art has been described as, “What the inside of your head looks like....'
+output_template: 'Pattern: "We can''t X because Y" Transform: "When (not Y), then we can X"
+
+  Transformation: An action you take when you see that pattern to generate an idea
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

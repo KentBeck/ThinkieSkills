@@ -1,0 +1,43 @@
+id: world_congress_1_june_4
+name: World Congress 1 June 4
+intent: Help you with World Congress 1 June 4.
+triggers:
+- world congress 1 june 4
+preconditions:
+- You are interested in World Congress 1 June 4.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: You see that “facilitated” part?
+- id: q_1
+  prompt: That’s where you come in. If you sign up to be a facilitator, you will:?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: .
+
+
+    Context:
+
+    Your brilliant program committee has been preparing the first Thinkie World Congress. It will be an online-only event. The outline is:
+
+    Introduction by yours truly
+
+    Facilitated discussion of a variety of Thinkies
+
+    Reflection on the discussion & cross-fertilization of ideas
+
+    Second facilitated discussion of different Thinkies
+
+    Reflection
+
+    Cognitive scientist gives their take on Thinkies
+
+    You see that “facilitated” part? That’s where you come in. If you sign up to be a facilitator, you will:
+
+    Pick a Think...'
+output_template: "Pattern: \nTransformation: \n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

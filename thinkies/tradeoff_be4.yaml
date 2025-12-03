@@ -1,0 +1,51 @@
+id: tradeoff_be4
+name: Tradeoff Be4
+intent: Ask—
+triggers:
+- Someone is trying to maximize some outcome, perhap...
+preconditions:
+- Someone is trying to maximize some outcome, perhaps getting frustrated that progress has slowed.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: How much increase do you need?
+- id: q_1
+  prompt: What are you giving up as you increase the outcome?
+- id: q_2
+  prompt: What will increase friction as you increase the outcome?
+scaffold:
+  guidance: 'The user is facing this pattern: Someone is trying to maximize some outcome, perhaps getting frustrated that progress has slowed..
+
+    Your goal is to help them apply this transformation: Ask—.
+
+
+    Context:
+
+    The International Symbol for “Tradeoff”
+
+    How much increase do you need?
+
+    What are you giving up as you increase the outcome?
+
+    What will increase friction as you increase the outcome?
+
+    I remember going to the Sunnyvale (California) library as a kid (probably 9 or 10) & picking out a book on system design. No idea what book it was. I didn’t really understand any of it. However, I plowed through it.
+
+    The one theme it repeated was the difference between “maximization” & “optimization”.  At the time I did...'
+output_template: 'Pattern: Someone is trying to maximize some outcome, perhaps getting frustrated that progress has slowed.
+
+  Transformation: Ask—
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

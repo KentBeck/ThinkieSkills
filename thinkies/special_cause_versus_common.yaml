@@ -1,0 +1,33 @@
+id: special_cause_versus_common
+name: Special Cause Versus Common
+intent: First decide if that reason happens repeatedly or just this once. React accordingly.
+triggers:
+- A process has gone haywire for some reason.
+preconditions:
+- You are interested in Special Cause Versus Common.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: One class of mistakes comes from not paying attention to a process. Sometimes it works, sometimes it doesn’t, who knows?
+- id: q_1
+  prompt: 🤷 That test is red sometimes?
+- id: q_2
+  prompt: Just ignore it. Doesn’t seem to hurt anything.?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: First decide if that reason happens repeatedly or just this once. React accordingly..
+
+
+    Context:
+
+    This is a process control Thinkie taking from Deming.
+
+    One class of mistakes comes from not paying attention to a process. Sometimes it works, sometimes it doesn’t, who knows? 🤷 That test is red sometimes? Just ignore it. Doesn’t seem to hurt anything.
+
+    This leads to a process with loads of variation. You can’t count on a process with loads of variation. So you work around it. A flaky test is a common cause of variation & deserves a systemic response. Let’s get rid of all the non-determinism in ou...'
+output_template: "Pattern: \nTransformation: First decide if that reason happens repeatedly or just this once. React accordingly.\n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

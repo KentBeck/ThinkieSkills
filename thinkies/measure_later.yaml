@@ -1,0 +1,41 @@
+id: measure_later
+name: Measure Later
+intent: what is something you could measure later in the process?
+triggers:
+- you’re stuck trying to improve a multi-step proces...
+preconditions:
+- you’re stuck trying to improve a multi-step process
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: you’re stuck trying to improve a multi-step process.
+
+    Your goal is to help them apply this transformation: what is something you could measure later in the process?.
+
+
+    Context:
+
+    We continue to edge into systems thinking territory. Humans tend to look at what is easy to look at instead of what is important or that provides leverage. This Thinkie addresses that tendency.
+
+    The classic example of this was managers concerned about programming productivity. If only the programmers typed more, we’d get more value out. Except that it didn’t matter how much code they produced, because QA could only validate so many changes.
+
+    This proved frustrating for programmers, because it ackn...'
+output_template: 'Pattern: you’re stuck trying to improve a multi-step process
+
+  Transformation: what is something you could measure later in the process?
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

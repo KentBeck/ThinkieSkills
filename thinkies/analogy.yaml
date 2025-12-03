@@ -1,0 +1,45 @@
+id: analogy
+name: Analogy
+intent: explain it in terms of another domain your listener already understands
+triggers:
+- you’re struggling to explain a concept...
+preconditions:
+- you’re struggling to explain a concept
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Wow! This seems so simplistic when written down like this, but if it’s really so simple then why don’t more people do it?
+scaffold:
+  guidance: 'The user is facing this pattern: you’re struggling to explain a concept.
+
+    Your goal is to help them apply this transformation: explain it in terms of another domain your listener already understands.
+
+
+    Context:
+
+    Wow! This seems so simplistic when written down like this, but if it’s really so simple then why don’t more people do it?
+
+    Here’s the thing—analogizing gets easier with practice. And the Thinkie Motto applies—generate
+
+    then
+
+    evaluate. It’s like this, it’s like that, maybe it’s like this other. Get in the habit.
+
+    Analogies come easier to me at some times than others. My mood affects my ability to make analogies. Recently I was on a course of steroids & part of the general heightened energy was an eas...'
+output_template: 'Pattern: you’re struggling to explain a concept
+
+  Transformation: explain it in terms of another domain your listener already understands
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

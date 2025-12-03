@@ -1,0 +1,55 @@
+id: influence_diagram
+name: Influence Diagram
+intent: diagram the effects you observe in the system & their influence on each other
+triggers:
+- you have a big, complicated system that’s acting u...
+preconditions:
+- you have a big, complicated system that’s acting up & you’d like to regain influence over it
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: I want to get to sustainability. I don’t need numbers for it, although that can be good. Should I make more newsletter content publicly available?
+- id: q_1
+  prompt: I’ve gotten contradictory advice on this question.?
+- id: q_2
+  prompt: So what’s going on here?
+scaffold:
+  guidance: 'The user is facing this pattern: you have a big, complicated system that’s acting up & you’d like to regain influence over it.
+
+    Your goal is to help them apply this transformation: diagram the effects you observe in the system & their influence on each other.
+
+
+    Context:
+
+    Thinkie: Influence Diagram follows from
+
+    Thinkie: Separate Observation From Judgement
+
+    . We aren’t rushing to take action. More probably we have stepped back from taking actions that weren’t working. Our actions may have even been counter-productive—we found ourselves getting less of what we wanted instead of more. What’s going on?
+
+    We need to know:
+
+    The parts (especially the parts we weren’t aware of)
+
+    How they relate (especially the connections we weren’t aware of)
+
+    Exercise
+
+    This newsletter has beco...'
+output_template: 'Pattern: you have a big, complicated system that’s acting up & you’d like to regain influence over it
+
+  Transformation: diagram the effects you observe in the system & their influence on each other
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

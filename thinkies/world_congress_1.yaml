@@ -1,0 +1,35 @@
+id: world_congress_1
+name: World Congress 1
+intent: Help you with World Congress 1.
+triggers:
+- world congress 1
+preconditions:
+- You are interested in World Congress 1.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: so you can say, “Oh yeah?
+- id: q_1
+  prompt: Well I was at number 1!”?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: .
+
+
+    Context:
+
+    June 4, 0800-1100 Pacific time
+
+    As a big thank you to all my supportive community we are holding the first workshop/conference on Thinkies exclusively for paying Tidy First subscribers. The technology we are using limits us to 50 participants, so places will be first-come-first-served.
+
+    Sign up here
+
+    so you can say, “Oh yeah? Well I was at number 1!”
+
+    Also we are still looking for facilitators. Comment or dm me if you’re interested....'
+output_template: "Pattern: \nTransformation: \n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

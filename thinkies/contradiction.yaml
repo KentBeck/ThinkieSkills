@@ -1,0 +1,39 @@
+id: contradiction
+name: Contradiction
+intent: find 2 statements by the client that contradict & (gently) point out the contradiction.
+triggers:
+- you are faced with a big, complicated situation in...
+preconditions:
+- you are faced with a big, complicated situation in need of improvement.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: you are faced with a big, complicated situation in need of improvement..
+
+    Your goal is to help them apply this transformation: find 2 statements by the client that contradict & (gently) point out the contradiction..
+
+
+    Context:
+
+    Here’s another consulting Thinkie. When consulting you take in a river of information, make sense of it quickly, & pick one or two salient points to get across. Folks don’t want to pay your rates for deep analysis, at least not at first. So, how can you quickly find something useful to say.
+
+    Say you’re talking about the Agile Manifesto. “Oh, we are totally aligned with the Agile Values. But also everything needs to be tracked in Jira.” Um, uh, I don’t understand how those 2 sentences go together....'
+output_template: 'Pattern: you are faced with a big, complicated situation in need of improvement.
+
+  Transformation: find 2 statements by the client that contradict & (gently) point out the contradiction.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

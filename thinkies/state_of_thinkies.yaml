@@ -1,0 +1,35 @@
+id: state_of_thinkies
+name: State Of Thinkies
+intent: Help you with State Of Thinkies.
+triggers:
+- state of thinkies
+preconditions:
+- You are interested in State Of Thinkies.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: So, where are we & where are we going with Thinkies?
+- id: q_1
+  prompt: How’re we doing?
+- id: q_2
+  prompt: Unknown. 70-80 Thinkies seems like a lot to me. What is a workable “vocabulary”?
+- id: q_3
+  prompt: What is the best way to teach Thinkies?
+- id: q_4
+  prompt: How do Thinkies compare to other approaches?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: .
+
+
+    Context:
+
+    My goal with the Thinkies project is to encourage creative thinking. As my ideas go, it’s an infant. I wish I had dated my first index card, but I’m guessing the project (re-) started in 2019. (I had an earlier version in the 90s called “How I Think”—yeah, I was an arrogant jackass.)
+
+    My projects tend to only become mainstream (the ones that become mainstream) after 20 years, so Thinkies are a long ways from that. Still, I appreciate your attention every day. Your encouragement, attention, exampl...'
+output_template: "Pattern: \nTransformation: \n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

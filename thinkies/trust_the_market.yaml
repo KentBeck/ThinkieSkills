@@ -1,0 +1,41 @@
+id: trust_the_market
+name: Trust The Market
+intent: Answer the question, “What would have to be true for the market to be right & me to be wrong?”
+triggers:
+- A market is acting in a confusing or irrational or...
+preconditions:
+- A market is acting in a confusing or irrational or unsustainable way.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: A market is acting in a confusing or irrational or unsustainable way..
+
+    Your goal is to help them apply this transformation: Answer the question, “What would have to be true for the market to be right & me to be wrong?”.
+
+
+    Context:
+
+    I’m motivated to understand the world. I grew up in a chaotic household where little made sense, hence my quest to make sense of things. However, the world can still be a damned confusing place.
+
+    For example, the San Francisco housing market made no sense early in COVID. Rents & house prices were sky high pre-COVID. Then a whole bunch of people moved out. Every block had a moving van every day, it seemed. And yet…rents & house prices didn’t drop.
+
+    This contradicts my naive interpretation of market...'
+output_template: 'Pattern: A market is acting in a confusing or irrational or unsustainable way.
+
+  Transformation: Answer the question, “What would have to be true for the market to be right & me to be wrong?”
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

@@ -1,0 +1,41 @@
+id: ergodic_good_thinkie_awful_name
+name: Ergodic Good Thinkie Awful Name
+intent: Help you with Ergodic Good Thinkie Awful Name.
+triggers:
+- ergodic good thinkie awful name
+preconditions:
+- You are interested in Ergodic Good Thinkie Awful Name.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: AI for medicine is good, right?
+- id: q_1
+  prompt: 'Brings better care to more people. Maybe, maybe not. Here’s my application of a new Thinkie: ergodicity.?'
+- id: q_2
+  prompt: ” In true Thinkie fashion, mostly the person is right & nothing comes of asking the Thinkie question. When you discover that the opposite really?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: .
+
+
+    Context:
+
+    AI for medicine is good, right? Brings better care to more people. Maybe, maybe not. Here’s my application of a new Thinkie: ergodicity.
+
+    The Pattern
+
+    1000 people play Russian Roulette once. 167-ish die, 833-ish live.
+
+    1 person plays Russian Roulette 1000 times. They die. 100%. (Okay, 6.5880055e-80 chance of surviving. Not going to bank on that.)
+
+    The outcome for an individual is different than the outcome for a population. Note that distinction. It will become important.
+
+    Thinkies
+
+    Thinkies are menta...'
+output_template: "Pattern: \nTransformation: \n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

@@ -1,0 +1,43 @@
+id: aligning_incentive_e6e
+name: Aligning Incentive E6E
+intent: rather than tell people what to do to work together, give them an incentive that will indirectly require collaboration.
+triggers:
+- people are working at cross purposes....
+preconditions:
+- people are working at cross purposes.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Not terribly realistic, but the impulse is right. Step back from “what’s to be done?
+- id: q_1
+  prompt: ” & lead through incentives instead.?
+scaffold:
+  guidance: 'The user is facing this pattern: people are working at cross purposes..
+
+    Your goal is to help them apply this transformation: rather than tell people what to do to work together, give them an incentive that will indirectly require collaboration..
+
+
+    Context:
+
+    WARNING! Any time I say “incentive”, some readers read, “Money! 💰!!!” Nope. Nope-ity nope. Yes, money is an incentive, but it is one of the most dangerous, most subject to Goodhart’s Curse. The strongest incentives uncover intrinsic motivations that were already there, just suppressed. Don’t pay people a dollar for each bug fixed.
+
+    The Goal
+
+    has a lovely Thinkie: Teaching Story about a group of scouts going on a hike. They have different fitness levels, so at first they spread out. The leaders get...'
+output_template: 'Pattern: people are working at cross purposes.
+
+  Transformation: rather than tell people what to do to work together, give them an incentive that will indirectly require collaboration.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

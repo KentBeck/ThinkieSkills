@@ -1,0 +1,49 @@
+id: but_if_you_could
+name: But If You Could
+intent: You respond with, “But what if you could <do whatever they just said>…”
+triggers:
+- Someone is stuck trying to make progress. They fan...
+preconditions:
+- Someone is stuck trying to make progress. They fantasize about what would be required to get unstuck.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: “What if you could?
+- id: q_1
+  prompt: “What if you could?
+scaffold:
+  guidance: 'The user is facing this pattern: Someone is stuck trying to make progress. They fantasize about what would be required to get unstuck..
+
+    Your goal is to help them apply this transformation: You respond with, “But what if you could <do whatever they just said>…”.
+
+
+    Context:
+
+    This Thinkie is similar, now that I write out, to Laughter. They are based on the same premise—people often know exactly what to do but they prevent themselves from doing it (for a host of annoying psychological reasons).
+
+    “We’d love to deploy more often. That would solve a host of integration problems.”
+
+    “What if you could?”
+
+    “Yeah, that’d be great. But we can’t.”
+
+    “What if you could?”
+
+    Executing this Thinkie requires a tricky bit of “one foot on the dock & one foot in the boat”. You have to be in t...'
+output_template: 'Pattern: Someone is stuck trying to make progress. They fantasize about what would be required to get unstuck.
+
+  Transformation: You respond with, “But what if you could <do whatever they just said>…”
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

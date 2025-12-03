@@ -1,0 +1,55 @@
+id: reduce_utilization
+name: Reduce Utilization
+intent: What would happen if we
+triggers:
+- We need to get more done but we’re already busy as...
+preconditions:
+- We need to get more done but we’re already busy as we can be.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: utilization?
+- id: q_1
+  prompt: Nobody wants that.?
+- id: q_2
+  prompt: Reduce Utilization is a great Thinkie because it’s backwards of how most people think. We aren’t getting enough done. How do we go faster?
+- id: q_3
+  prompt: Nope. If we slow down, what happens then?
+- id: q_4
+  prompt: Maybe the ideas generated won’t work, or won’t be accepted, but that’s okay. Thinkies are for generating ideas, not good ideas.?
+scaffold:
+  guidance: 'The user is facing this pattern: We need to get more done but we’re already busy as we can be..
+
+    Your goal is to help them apply this transformation: What would happen if we.
+
+
+    Context:
+
+    reduced
+
+    utilization?
+
+    Reduce Utilization is based on
+
+    Kingman’s Formula
+
+    which states the unintuitive (to many folks) result that as utilization of a rate-limiting resource approaches 100%, the time required to process a new item of work approaches infinity. Yep, ∞. The big forever. Is that really what you want, to only work on existing work or, put the other way, to never work on anything that comes up? Nobody wants that.
+
+    Reduce Utilization is a great Thinkie because it’s backwards of how most peo...'
+output_template: 'Pattern: We need to get more done but we’re already busy as we can be.
+
+  Transformation: What would happen if we
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

@@ -1,0 +1,31 @@
+id: world_congress_i
+name: World Congress I
+intent: Help you with World Congress I.
+triggers:
+- world congress i
+preconditions:
+- You are interested in World Congress I.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: P.S. I’ll get back to writing up the last few weekly Thinkies when TWC has settled down. The end is in sight! What happens then?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: .
+
+
+    Context:
+
+    One day until TWC I (I think we’re going with the Super Bowl-style Roman numeraling). It’s sold out, but we hope to have a larger-capacity TWC II soon so if you missed out, please don’t despair.
+
+    I want to thank the team, without whom this definitely wouldn’t have happened.
+
+    —the ringleader. Took a vague idea from me. Filled in all the details. Kept gently prodding me.
+
+    —an early Thinkie evangelist. I appreciated his comments of & support for the first Thinkies I published. Working with him on TWC ...'
+output_template: "Pattern: \nTransformation: \n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

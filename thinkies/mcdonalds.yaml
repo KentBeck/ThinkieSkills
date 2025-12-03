@@ -1,0 +1,35 @@
+id: mcdonalds
+name: Mcdonalds
+intent: You propose a bad-but-not-ludicrous alternative.
+triggers:
+- You sense that a group may be ready to make a decision but is stalling.
+preconditions:
+- You are interested in Mcdonalds.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: This one’s called “McDonald’s” because the classic situation is going out to eat. Where are we going?
+- id: q_1
+  prompt: Oh I don’t know. How about McDonald’s?
+- id: q_2
+  prompt: Oh hell no, let’s go to XXX.?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: You propose a bad-but-not-ludicrous alternative..
+
+
+    Context:
+
+    McDonald’s is part of the series of Decision Thinkies.
+
+    This one’s called “McDonald’s” because the classic situation is going out to eat. Where are we going? Oh I don’t know. How about McDonald’s? Oh hell no, let’s go to XXX.
+
+    This Thinkie is related to Naivety (will write about this one soon). Ideally the sub-par decision you propose would be acceptable if the group chose it.
+
+    [ed: here is an earlier publication from Jon Bell https://jonbell.medium.com/mcdonalds-theory-9216e1c9da7d]...'
+output_template: "Pattern: \nTransformation: You propose a bad-but-not-ludicrous alternative.\n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

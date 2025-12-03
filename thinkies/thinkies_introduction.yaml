@@ -1,0 +1,45 @@
+id: thinkies_introduction
+name: Thinkies Introduction
+intent: Help you with Thinkies Introduction.
+triggers:
+- thinkies introduction
+preconditions:
+- You are interested in Thinkies Introduction.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: ” I frequently get this question. We’re in the middle of some conversation. I have an idea. I put it out there. “How did you think of?
+- id: q_1
+  prompt: My big question is—can these habits be learned?
+- id: q_2
+  prompt: I mean, obviously, because I’ve learned them. But can bright folks like you learn a habit as an adult & become more “creative”?
+scaffold:
+  guidance: 'The user is facing this pattern: .
+
+    Your goal is to help them apply this transformation: .
+
+
+    Context:
+
+    “How did you think of
+
+    that
+
+    ?” I frequently get this question. We’re in the middle of some conversation. I have an idea. I put it out there. “How did you think of
+
+    that
+
+    ?”
+
+    Here’s the thing—I can often tell you
+
+    exactly
+
+    how I thought of it. There’s some trick I learned a long time ago. I took the context of the conversation. Performed this trick on it. 💡
+
+    About 5 years ago I started collecting these moments. What was the trick, the maneuver, I used to generate the idea. Here are my notes from this pr...'
+output_template: "Pattern: \nTransformation: \n\nAnalysis:\n{analysis}\n\nSuggested Next Step:\n{next_step}"
+examples: []
+pitfalls: []

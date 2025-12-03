@@ -1,0 +1,61 @@
+id: perfect_setup
+name: Perfect Setup
+intent: list the properties that would set the situation up perfectly for success. Back off only reluctantly.
+triggers:
+- you’re having trouble making progress in a situati...
+preconditions:
+- you’re having trouble making progress in a situation.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: What of these properties are optional?
+- id: q_1
+  prompt: If I want to play profitably, I should insist to myself on all the properties that are under my control. Do I?
+- id: q_2
+  prompt: No, but more & more over time.?
+scaffold:
+  guidance: 'The user is facing this pattern: you’re having trouble making progress in a situation..
+
+    Your goal is to help them apply this transformation: list the properties that would set the situation up perfectly for success. Back off only reluctantly..
+
+
+    Context:
+
+    Too often the reason we’re not making progress isn’t our effort, but our context. We get used to the proverbial pebble in our shoe & complain about our walking speed instead of taking the damn pebble out.
+
+    Poker is a great example of this for me. The perfect setup for a profitable poker session is:
+
+    Good sleep the night before.
+
+    Meditation.
+
+    Exercise.
+
+    Eating well.
+
+    Feeling sharp & confident.
+
+    Have a learning goal.
+
+    Pick the most profitable game.
+
+    Pick the table with the weakest opponents.
+
+    Have 2 conserv...'
+output_template: 'Pattern: you’re having trouble making progress in a situation.
+
+  Transformation: list the properties that would set the situation up perfectly for success. Back off only reluctantly.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

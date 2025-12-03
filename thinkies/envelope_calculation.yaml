@@ -1,0 +1,45 @@
+id: envelope_calculation
+name: Envelope Calculation
+intent: Do the math to put the numbers into context.
+triggers:
+- You see some data. Do they matter?...
+preconditions:
+- You see some data. Do they matter?
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: Gergely’s post reminded me of this Thinkie. 350K H100s. Is that a lot or a little. Almost 20% of worldwide units?
+- id: q_1
+  prompt: ” “Oh. No.”?
+scaffold:
+  guidance: 'The user is facing this pattern: You see some data. Do they matter?.
+
+    Your goal is to help them apply this transformation: Do the math to put the numbers into context..
+
+
+    Context:
+
+    Gergely’s post reminded me of this Thinkie. 350K H100s. Is that a lot or a little. Almost 20% of worldwide units? Thats
+
+    a lot!!!
+
+    Envelope calculations aren’t complicated math. If you need a spreadsheet, you’re probably investing too much, at least at first. This Thinkie is the habit of putting the data you see into perspective.
+
+    Another example from early in my career: when I was at Tektronix, someone was excitedly describing their high-resolution, full-color display. My Envelope Calculation was,...'
+output_template: 'Pattern: You see some data. Do they matter?
+
+  Transformation: Do the math to put the numbers into context.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

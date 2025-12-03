@@ -1,0 +1,39 @@
+id: naive_solution
+name: Naive Solution
+intent: you ask, “Why is this any more complicated than <naive solution>?”
+triggers:
+- the team is stuck solving a complicated problem. T...
+preconditions:
+- the team is stuck solving a complicated problem. They are focused on complicated solutions.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: q_0
+  prompt: As always, the examples are the hard part. Anyone have a good example?
+scaffold:
+  guidance: 'The user is facing this pattern: the team is stuck solving a complicated problem. They are focused on complicated solutions..
+
+    Your goal is to help them apply this transformation: you ask, “Why is this any more complicated than <naive solution>?”.
+
+
+    Context:
+
+    This is one of a class of Thinkies that work not because you have superior skill, but because you maintain perspective while others are stuck in a local maximum. I like these because I don’t have to work hard, I don’t have to compete, I just have to maintain composure. I can be valuable out of all proportion to my technical skill. (I’ve lived most of my technical life in terror that my skills won’t be good enough.)
+
+    This is also a dual-purpose Thinkie. It can work by getting the team onto a new t...'
+output_template: 'Pattern: the team is stuck solving a complicated problem. They are focused on complicated solutions.
+
+  Transformation: you ask, “Why is this any more complicated than <naive solution>?”
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []

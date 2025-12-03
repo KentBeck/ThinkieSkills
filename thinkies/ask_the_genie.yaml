@@ -1,0 +1,45 @@
+id: ask_the_genie
+name: Ask The Genie
+intent: Ask the genie.
+triggers:
+- You have a question, any question, especially a qu...
+preconditions:
+- You have a question, any question, especially a question you have tended to abandon because it would be too much work.
+voice:
+  style: analytical
+  tone: helpful
+questions:
+- id: situation
+  prompt: What is the situation you are facing?
+scaffold:
+  guidance: 'The user is facing this pattern: You have a question, any question, especially a question you have tended to abandon because it would be too much work..
+
+    Your goal is to help them apply this transformation: Ask the genie..
+
+
+    Context:
+
+    This is a habit. A new habit. But a habit. A highly profitable but also highly variable habit. That is, sometimes the genie has a great answer & sometimes just distraction, but the great answers are really great & not something you would come up with another way.
+
+    Josh Cannon taught me this. Every time I would ask him a question he’d say, “Ask Claude!” Eventually that voice started playing in my head without me having to wait for him.
+
+    My most profound experience of this came when
+
+    mentioned
+
+    eigenv...'
+output_template: 'Pattern: You have a question, any question, especially a question you have tended to abandon because it would be too much work.
+
+  Transformation: Ask the genie.
+
+
+  Analysis:
+
+  {analysis}
+
+
+  Suggested Next Step:
+
+  {next_step}'
+examples: []
+pitfalls: []
