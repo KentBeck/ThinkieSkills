@@ -1,0 +1,64 @@
+# Thinkie: Hard Problem
+id: hard_problem
+name: Hard Problem
+intent: Help you face a hairy, intimidating problem by listing all its aspects.
+triggers:
+  - stuck
+  - hairy problem
+  - intimidating
+  - nagging feeling
+  - missing something
+  - fear of failure
+preconditions:
+  - You are facing a complex, difficult problem and feel stuck or scared.
+voice:
+  style: reassuring but thorough
+  tone: analytical
+questions:
+  - id: problem_description
+    prompt: What is the hairy problem you are facing?
+  - id: aspects
+    prompt: List absolutely everything that makes this problem hard. Technical, social, economic, history, incentives, uncertainty, biases. Don't hold back.
+scaffold:
+  guidance: |
+    The user is likely freezing in the face of a complex problem.
+    Your goal is to help them "discharge the tension" by listing every single difficulty.
+    Do not try to solve the problem yet. Just get it all out on the table.
+    Encourage them to look at non-technical aspects (social, incentives, etc.).
+output_template: |
+  Problem: {problem_description}
+
+  The Hairy Details:
+  {aspects}
+
+  Analysis:
+  You have faced the hairy problem. By listing these out, you've moved from "panicked fear" to "rational analysis".
+  
+  Suggested next step:
+  Look at your list. Are there any items that are assumptions rather than facts?
+  Are there any items that you can influence directly?
+  Pick one small, concrete aspect to investigate or address.
+examples:
+  - user_goal: Address software design constraints
+    problem_description: Software design is too hard to prioritize.
+    aspects: Technical debt, team disagreement, pressure to ship features, lack of skills, legacy code, fear of breaking things.
+    example_output: |
+      Problem: Prioritizing software design.
+      
+      The Hairy Details:
+      - Technical debt
+      - Team disagreement
+      - Pressure to ship
+      - Lack of skills
+      - Legacy code
+      - Fear of breaking things
+
+      Analysis:
+      This is a lot, but now it's visible. You aren't just "bad at design", you are navigating a complex system of constraints.
+      
+      Suggested next step:
+      Pick "Team disagreement". Can you have a conversation to align on one small design principle?
+pitfalls:
+  - Trying to solve the problem immediately.
+  - Letting the user stop at technical difficulties; push for social/economic ones.
+  - allowing the user to be vague ("it's just hard").

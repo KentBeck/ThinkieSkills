@@ -1,0 +1,46 @@
+# Thinkie: Work Backwards
+id: work_backwards
+name: Work Backwards
+intent: Help you get unstuck by starting at the goal and working backwards.
+triggers:
+  - stuck
+  - overwhelmed
+  - too many options
+  - don't know where to start
+preconditions:
+  - You have a goal but are struggling with the path to get there.
+voice:
+  style: succinct
+  tone: encouraging
+questions:
+  - id: goal_state
+    prompt: What is the goal state? What does it look like when you are done?
+  - id: step_before
+    prompt: What is the step right before that? What needs to be true for the goal to happen?
+scaffold:
+  guidance: |
+    The user is stuck trying to work forwards.
+    Guide them to define the end state clearly.
+    Then ask them to identify the immediate precursor to that end state.
+    Repeat until the path connects to where they are now.
+output_template: |
+  Goal: {goal_state}
+
+  Step before goal: {step_before}
+
+  Suggested next step:
+  Keep working backwards. What needs to be true for "{step_before}" to happen?
+  Continue until you reach a step you can take right now.
+examples:
+  - user_goal: Write a difficult chapter
+    goal_state: The chapter explains the importance of responsibility clearly.
+    step_before: I have a clear outline of how responsibility contributes to work relationships.
+    example_output: |
+      Goal: The chapter explains responsibility clearly.
+      Step before: Outline connecting responsibility to work relationships.
+
+      Suggested next step:
+      What needs to be true to create that outline? Maybe list the key attributes of good work relationships first.
+pitfalls:
+  - Letting the user get bogged down in forward-thinking details again.
+  - Not forcing the "step before" to be a concrete prerequisite.

@@ -1,0 +1,48 @@
+# Thinkie: Trade-off
+id: tradeoff
+name: Trade-off
+intent: Help you find the hidden cost of maximizing a single value.
+triggers:
+  - maximize
+  - optimize
+  - north star
+  - only one thing matters
+  - improvement stalled
+preconditions:
+  - You are trying to improve a specific metric or value.
+voice:
+  style: succinct
+  tone: analytical
+questions:
+  - id: value_to_maximize
+    prompt: What is the one thing you are trying to maximize?
+  - id: current_pain
+    prompt: What is going wrong as you try to maximize it? (e.g. "something always goes wrong")
+scaffold:
+  guidance: |
+    The user is focused on maximizing one variable (e.g. "minutes per day").
+    Your goal is to help them see the other side of the trade-off that they are implicitly sacrificing.
+    Engineering is about optimization (balancing trade-offs), not maximization (pushing one variable to infinity).
+output_template: |
+  You are trying to maximize: {value_to_maximize}
+
+  But you're experiencing: {current_pain}
+
+  This suggests you've hit a trade-off. You can't just change the output (maximization) without changing the inputs.
+
+  Suggested next step:
+  Identify the counter-balancing metric. If you maximize {value_to_maximize}, what goes down? Or what cost goes up?
+  Focus on optimizing the relationship between these two, rather than maximizing just one.
+examples:
+  - user_goal: Increase deployment frequency
+    value_to_maximize: deployment frequency
+    current_pain: production outages increase
+    example_output: |
+      You are trying to maximize: deployment frequency
+      But you're experiencing: production outages
+
+      This is a trade-off between Speed and Stability.
+      Suggested next step: Stop trying to just "deploy more". Look at the inputs that allow for speed *with* stability (e.g. smaller batches, better testing). Optimize the flow, don't just maximize the count.
+pitfalls:
+  - Accepting the user's premise that they just need to "try harder" to maximize the value.
+  - Offering specific technical solutions instead of identifying the structural trade-off.

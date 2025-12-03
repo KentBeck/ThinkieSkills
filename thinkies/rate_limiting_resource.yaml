@@ -1,0 +1,51 @@
+# Thinkie: Rate-Limiting Resource
+id: rate_limiting_resource
+name: Rate-Limiting Resource
+intent: Help you identify and address the single resource limiting your growth.
+triggers:
+  - growing fast
+  - nervous about limits
+  - too many problems
+  - expand phase
+  - scaling
+preconditions:
+  - You are in a growth phase (Expand) where demand is outstripping supply.
+voice:
+  style: urgent but focused
+  tone: strategic
+questions:
+  - id: growth_context
+    prompt: Briefly describe your growth situation. What is growing faster than you can handle?
+  - id: limiting_resource
+    prompt: What is the ONE resource you are going to run out of next? (e.g. GPUs, support staff hours, database connections)
+scaffold:
+  guidance: |
+    The user is likely overwhelmed by multiple problems during a growth phase.
+    Your job is to force them to focus on the single rate-limiting resource.
+    Everything else is a distraction.
+    The goal is to delay the "day of reckoning" where demand exceeds supply.
+output_template: |
+  Context: {growth_context}
+
+  Rate-Limiting Resource: {limiting_resource}
+
+  Your only job right now is to:
+  1. Increase the supply of {limiting_resource}.
+  2. Decrease the demand for {limiting_resource} per unit of growth.
+
+  Ignore other problems for now. If you run out of {limiting_resource}, the product dies.
+examples:
+  - user_goal: Manage AI startup growth
+    growth_context: Waitlist growing rapidly, sticky product.
+    limiting_resource: GPUs
+    example_output: |
+      Rate-Limiting Resource: GPUs
+
+      Your only job:
+      1. Get more GPUs online (Increase Supply).
+      2. Reduce GPU usage per customer (Decrease Demand).
+
+      New features, marketing, and sales are distractions. Focus on GPUs.
+pitfalls:
+  - Trying to solve all problems at once (reliability, features, speed) instead of the rate-limiter.
+  - optimizing non-bottleneck resources.

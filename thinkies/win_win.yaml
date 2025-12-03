@@ -1,0 +1,53 @@
+# Thinkie: Win/Win
+id: win_win
+name: Win/Win
+intent: Help you find solutions that benefit everyone, rather than accepting a zero-sum trade-off.
+triggers:
+  - stuck on decision
+  - negative impact
+  - someone loses
+  - zero sum
+  - compromise
+preconditions:
+  - You are facing a decision where it seems like someone has to lose.
+voice:
+  style: optimistic but rigorous
+  tone: collaborative
+questions:
+  - id: conflict
+    prompt: What is the decision you are stuck on? Who is going to be negatively affected?
+  - id: stakeholders
+    prompt: List all the parties involved (including yourself).
+scaffold:
+  guidance: |
+    The user is likely stuck in a "zero-sum" mindset (if I win, you lose).
+    Your goal is to push them to generate ideas where *everyone* benefits.
+    After generating ideas, force them to "Evaluation": be brutally honest about the costs/benefits.
+output_template: |
+  Conflict: {conflict}
+  Stakeholders: {stakeholders}
+
+  Challenge:
+  Generate 3 ideas where ALL stakeholders are better off.
+  Don't settle for "less bad". Look for "better".
+
+  Evaluation:
+  For your best idea, be brutally honest: is it *really* a win for everyone? Or are you kidding yourself?
+examples:
+  - user_goal: Increase revenue
+    conflict: Raising prices hurts subscribers.
+    stakeholders: Me, Subscribers, Sponsors
+    example_output: |
+      Conflict: Raising prices hurts subscribers.
+      Stakeholders: Me, Subscribers, Sponsors
+
+      Idea: Sponsorships.
+      - Me: Sustainable revenue.
+      - Sponsors: Exposure to relevant audience.
+      - Subscribers: Learn about useful products.
+
+      Evaluation:
+      Is it really a win for subscribers? Only if the products are actually useful and the ads aren't annoying.
+pitfalls:
+  - Accepting a compromise (everyone loses a little) as a win/win.
+  - "'Kidding yourself' that a solution is good for someone when it's actually annoying or harmful."

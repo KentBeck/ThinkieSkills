@@ -1,0 +1,57 @@
+# Thinkie: Hill Climbing
+id: hill_climbing
+name: Hill Climbing
+intent: Help you decide whether to keep optimizing the current approach or switch to a new one.
+triggers:
+  - stuck improving
+  - not good enough
+  - incremental improvement
+  - local maximum
+  - diminishing returns
+preconditions:
+  - You are trying to improve something but progress is slow or stalled.
+voice:
+  style: analytical
+  tone: objective
+questions:
+  - id: fitness_function
+    prompt: What is your "fitness function"? What exactly does "better" mean?
+  - id: threshold
+    prompt: What is the threshold above which you would be satisfied?
+  - id: current_hill
+    prompt: Describe the "hill" you are currently climbing (your current approach/architecture).
+scaffold:
+  guidance: |
+    The user is likely stuck in "incremental improvement" mode.
+    Your goal is to help them determine if the "local maximum" of their current hill meets their threshold.
+    If not, they need to prepare for things to get worse before they get better (switching hills).
+output_template: |
+  Fitness Function: {fitness_function}
+  Threshold: {threshold}
+  Current Approach: {current_hill}
+
+  Analysis:
+  Can the current approach *ever* reach the threshold?
+  If YES: Keep climbing.
+  If NO: You are at a local maximum. You need to switch hills.
+
+  Warning:
+  Switching hills means things will get worse before they get better (the valley between hills).
+examples:
+  - user_goal: Improve search performance
+    fitness_function: Search all photos in < 1 second.
+    threshold: 1 second
+    current_hill: Optimizing SQL queries on the current database.
+    example_output: |
+      Fitness: Search < 1s.
+      Current Approach: SQL optimization.
+
+      Analysis:
+      Will SQL optimization ever get to < 1s for the whole portfolio?
+      If no, you need a new system (e.g. Elasticsearch).
+      
+      Warning:
+      Migration will be painful and initially buggy.
+pitfalls:
+  - Encouraging the user to keep optimizing a dead-end approach.
+  - Not warning them about the cost of switching hills (the "valley").
